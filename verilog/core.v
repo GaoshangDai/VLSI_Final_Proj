@@ -14,7 +14,7 @@ output [bw_psum*col-1:0] out;
 wire   [bw_psum*col-1:0] pmem_out;
 input  [pr*bw-1:0] mem_in;
 input  clk, fifo_ext_rd_clk, acc, div, wr_norm;
-input  [19:0] inst; 
+input  [16:0] inst; 
 input  reset;
 input  [bw_psum+3:0] sum_in;
 wire [bw_psum*col-1:0] sfp_in;
@@ -126,10 +126,8 @@ sfp_row #(.bw(bw), .bw_psum(bw_psum), .col(col)) sfp_row_instance (
 	.sfp_in(sfp_in),
 	.sfp_out(sfp_out),
 	.fifo_ext_rd(fifo_ext_rd),
-	.sum_q(sum_q)
-
         .fifo_ext_rd_clk(fifo_ext_rd_clk),
-	.reset(reset),
+	.reset(reset)
 );
 
 
