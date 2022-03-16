@@ -1,0 +1,1403 @@
+##
+## LEF for PtnCells ;
+## created by Innovus v19.17-s077_1 on Mon Mar 14 17:45:12 2022
+##
+
+VERSION 5.8 ;
+
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO fullchip
+  CLASS BLOCK ;
+  SIZE 697.600000 BY 695.000000 ;
+  FOREIGN fullchip 0.000000 0.000000 ;
+  ORIGIN 0 0 ;
+  SYMMETRY X Y R90 ;
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 0.000000 347.355000 0.470000 347.445000 ;
+    END
+  END clk
+  PIN sum_out[23]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END sum_out[23]
+  PIN sum_out[22]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END sum_out[22]
+  PIN sum_out[21]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END sum_out[21]
+  PIN sum_out[20]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END sum_out[20]
+  PIN sum_out[19]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END sum_out[19]
+  PIN sum_out[18]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END sum_out[18]
+  PIN sum_out[17]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END sum_out[17]
+  PIN sum_out[16]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END sum_out[16]
+  PIN sum_out[15]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END sum_out[15]
+  PIN sum_out[14]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END sum_out[14]
+  PIN sum_out[13]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END sum_out[13]
+  PIN sum_out[12]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END sum_out[12]
+  PIN sum_out[11]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END sum_out[11]
+  PIN sum_out[10]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END sum_out[10]
+  PIN sum_out[9]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END sum_out[9]
+  PIN sum_out[8]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END sum_out[8]
+  PIN sum_out[7]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END sum_out[7]
+  PIN sum_out[6]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END sum_out[6]
+  PIN sum_out[5]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END sum_out[5]
+  PIN sum_out[4]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END sum_out[4]
+  PIN sum_out[3]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END sum_out[3]
+  PIN sum_out[2]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END sum_out[2]
+  PIN sum_out[1]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END sum_out[1]
+  PIN sum_out[0]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END sum_out[0]
+  PIN mem_in[127]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[127]
+  PIN mem_in[126]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[126]
+  PIN mem_in[125]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[125]
+  PIN mem_in[124]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[124]
+  PIN mem_in[123]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[123]
+  PIN mem_in[122]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[122]
+  PIN mem_in[121]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[121]
+  PIN mem_in[120]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[120]
+  PIN mem_in[119]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[119]
+  PIN mem_in[118]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[118]
+  PIN mem_in[117]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[117]
+  PIN mem_in[116]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[116]
+  PIN mem_in[115]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[115]
+  PIN mem_in[114]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[114]
+  PIN mem_in[113]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[113]
+  PIN mem_in[112]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[112]
+  PIN mem_in[111]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[111]
+  PIN mem_in[110]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[110]
+  PIN mem_in[109]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[109]
+  PIN mem_in[108]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[108]
+  PIN mem_in[107]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[107]
+  PIN mem_in[106]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[106]
+  PIN mem_in[105]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[105]
+  PIN mem_in[104]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[104]
+  PIN mem_in[103]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[103]
+  PIN mem_in[102]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[102]
+  PIN mem_in[101]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[101]
+  PIN mem_in[100]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[100]
+  PIN mem_in[99]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[99]
+  PIN mem_in[98]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[98]
+  PIN mem_in[97]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[97]
+  PIN mem_in[96]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[96]
+  PIN mem_in[95]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[95]
+  PIN mem_in[94]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[94]
+  PIN mem_in[93]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[93]
+  PIN mem_in[92]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[92]
+  PIN mem_in[91]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[91]
+  PIN mem_in[90]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[90]
+  PIN mem_in[89]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[89]
+  PIN mem_in[88]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[88]
+  PIN mem_in[87]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[87]
+  PIN mem_in[86]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[86]
+  PIN mem_in[85]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[85]
+  PIN mem_in[84]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[84]
+  PIN mem_in[83]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[83]
+  PIN mem_in[82]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[82]
+  PIN mem_in[81]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[81]
+  PIN mem_in[80]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[80]
+  PIN mem_in[79]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[79]
+  PIN mem_in[78]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[78]
+  PIN mem_in[77]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[77]
+  PIN mem_in[76]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[76]
+  PIN mem_in[75]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[75]
+  PIN mem_in[74]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[74]
+  PIN mem_in[73]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[73]
+  PIN mem_in[72]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[72]
+  PIN mem_in[71]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[71]
+  PIN mem_in[70]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[70]
+  PIN mem_in[69]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[69]
+  PIN mem_in[68]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[68]
+  PIN mem_in[67]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[67]
+  PIN mem_in[66]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[66]
+  PIN mem_in[65]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[65]
+  PIN mem_in[64]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[64]
+  PIN mem_in[63]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[63]
+  PIN mem_in[62]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[62]
+  PIN mem_in[61]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[61]
+  PIN mem_in[60]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[60]
+  PIN mem_in[59]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[59]
+  PIN mem_in[58]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[58]
+  PIN mem_in[57]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[57]
+  PIN mem_in[56]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[56]
+  PIN mem_in[55]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[55]
+  PIN mem_in[54]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[54]
+  PIN mem_in[53]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[53]
+  PIN mem_in[52]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[52]
+  PIN mem_in[51]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[51]
+  PIN mem_in[50]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[50]
+  PIN mem_in[49]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[49]
+  PIN mem_in[48]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[48]
+  PIN mem_in[47]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[47]
+  PIN mem_in[46]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[46]
+  PIN mem_in[45]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[45]
+  PIN mem_in[44]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[44]
+  PIN mem_in[43]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[43]
+  PIN mem_in[42]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[42]
+  PIN mem_in[41]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[41]
+  PIN mem_in[40]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[40]
+  PIN mem_in[39]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[39]
+  PIN mem_in[38]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[38]
+  PIN mem_in[37]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[37]
+  PIN mem_in[36]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[36]
+  PIN mem_in[35]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[35]
+  PIN mem_in[34]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[34]
+  PIN mem_in[33]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[33]
+  PIN mem_in[32]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[32]
+  PIN mem_in[31]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[31]
+  PIN mem_in[30]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[30]
+  PIN mem_in[29]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[29]
+  PIN mem_in[28]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[28]
+  PIN mem_in[27]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[27]
+  PIN mem_in[26]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[26]
+  PIN mem_in[25]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[25]
+  PIN mem_in[24]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[24]
+  PIN mem_in[23]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[23]
+  PIN mem_in[22]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[22]
+  PIN mem_in[21]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[21]
+  PIN mem_in[20]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[20]
+  PIN mem_in[19]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[19]
+  PIN mem_in[18]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[18]
+  PIN mem_in[17]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[17]
+  PIN mem_in[16]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[16]
+  PIN mem_in[15]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[15]
+  PIN mem_in[14]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[14]
+  PIN mem_in[13]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[13]
+  PIN mem_in[12]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[12]
+  PIN mem_in[11]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[11]
+  PIN mem_in[10]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[10]
+  PIN mem_in[9]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[9]
+  PIN mem_in[8]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[8]
+  PIN mem_in[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[7]
+  PIN mem_in[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[6]
+  PIN mem_in[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[5]
+  PIN mem_in[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[4]
+  PIN mem_in[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[3]
+  PIN mem_in[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[2]
+  PIN mem_in[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[1]
+  PIN mem_in[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END mem_in[0]
+  PIN out[159]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[159]
+  PIN out[158]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[158]
+  PIN out[157]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[157]
+  PIN out[156]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[156]
+  PIN out[155]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[155]
+  PIN out[154]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[154]
+  PIN out[153]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[153]
+  PIN out[152]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[152]
+  PIN out[151]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[151]
+  PIN out[150]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[150]
+  PIN out[149]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[149]
+  PIN out[148]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[148]
+  PIN out[147]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[147]
+  PIN out[146]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[146]
+  PIN out[145]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[145]
+  PIN out[144]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[144]
+  PIN out[143]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[143]
+  PIN out[142]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[142]
+  PIN out[141]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[141]
+  PIN out[140]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[140]
+  PIN out[139]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[139]
+  PIN out[138]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[138]
+  PIN out[137]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[137]
+  PIN out[136]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[136]
+  PIN out[135]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[135]
+  PIN out[134]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[134]
+  PIN out[133]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[133]
+  PIN out[132]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[132]
+  PIN out[131]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[131]
+  PIN out[130]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[130]
+  PIN out[129]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[129]
+  PIN out[128]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[128]
+  PIN out[127]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[127]
+  PIN out[126]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[126]
+  PIN out[125]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[125]
+  PIN out[124]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[124]
+  PIN out[123]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[123]
+  PIN out[122]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[122]
+  PIN out[121]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[121]
+  PIN out[120]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[120]
+  PIN out[119]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[119]
+  PIN out[118]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[118]
+  PIN out[117]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[117]
+  PIN out[116]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[116]
+  PIN out[115]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[115]
+  PIN out[114]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[114]
+  PIN out[113]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[113]
+  PIN out[112]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[112]
+  PIN out[111]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[111]
+  PIN out[110]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[110]
+  PIN out[109]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[109]
+  PIN out[108]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[108]
+  PIN out[107]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[107]
+  PIN out[106]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[106]
+  PIN out[105]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[105]
+  PIN out[104]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[104]
+  PIN out[103]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[103]
+  PIN out[102]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[102]
+  PIN out[101]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[101]
+  PIN out[100]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[100]
+  PIN out[99]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[99]
+  PIN out[98]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[98]
+  PIN out[97]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[97]
+  PIN out[96]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[96]
+  PIN out[95]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[95]
+  PIN out[94]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[94]
+  PIN out[93]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[93]
+  PIN out[92]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[92]
+  PIN out[91]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[91]
+  PIN out[90]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[90]
+  PIN out[89]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[89]
+  PIN out[88]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[88]
+  PIN out[87]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[87]
+  PIN out[86]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[86]
+  PIN out[85]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[85]
+  PIN out[84]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[84]
+  PIN out[83]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[83]
+  PIN out[82]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[82]
+  PIN out[81]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[81]
+  PIN out[80]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[80]
+  PIN out[79]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[79]
+  PIN out[78]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[78]
+  PIN out[77]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[77]
+  PIN out[76]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[76]
+  PIN out[75]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[75]
+  PIN out[74]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[74]
+  PIN out[73]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[73]
+  PIN out[72]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[72]
+  PIN out[71]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[71]
+  PIN out[70]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[70]
+  PIN out[69]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[69]
+  PIN out[68]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[68]
+  PIN out[67]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[67]
+  PIN out[66]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[66]
+  PIN out[65]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[65]
+  PIN out[64]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[64]
+  PIN out[63]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[63]
+  PIN out[62]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[62]
+  PIN out[61]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[61]
+  PIN out[60]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[60]
+  PIN out[59]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[59]
+  PIN out[58]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[58]
+  PIN out[57]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[57]
+  PIN out[56]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[56]
+  PIN out[55]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[55]
+  PIN out[54]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[54]
+  PIN out[53]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[53]
+  PIN out[52]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[52]
+  PIN out[51]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[51]
+  PIN out[50]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[50]
+  PIN out[49]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[49]
+  PIN out[48]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[48]
+  PIN out[47]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[47]
+  PIN out[46]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[46]
+  PIN out[45]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[45]
+  PIN out[44]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[44]
+  PIN out[43]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[43]
+  PIN out[42]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[42]
+  PIN out[41]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[41]
+  PIN out[40]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[40]
+  PIN out[39]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[39]
+  PIN out[38]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[38]
+  PIN out[37]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[37]
+  PIN out[36]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[36]
+  PIN out[35]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[35]
+  PIN out[34]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[34]
+  PIN out[33]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[33]
+  PIN out[32]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[32]
+  PIN out[31]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[31]
+  PIN out[30]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[30]
+  PIN out[29]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[29]
+  PIN out[28]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[28]
+  PIN out[27]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[27]
+  PIN out[26]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[26]
+  PIN out[25]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[25]
+  PIN out[24]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[24]
+  PIN out[23]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[23]
+  PIN out[22]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[22]
+  PIN out[21]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[21]
+  PIN out[20]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[20]
+  PIN out[19]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[19]
+  PIN out[18]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[18]
+  PIN out[17]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[17]
+  PIN out[16]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[16]
+  PIN out[15]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[15]
+  PIN out[14]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[14]
+  PIN out[13]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[13]
+  PIN out[12]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[12]
+  PIN out[11]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[11]
+  PIN out[10]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[10]
+  PIN out[9]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[9]
+  PIN out[8]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[8]
+  PIN out[7]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[7]
+  PIN out[6]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END out[6]
+  PIN out[5]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 697.130000 343.555000 697.600000 343.645000 ;
+    END
+  END out[5]
+  PIN out[4]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 697.130000 345.155000 697.600000 345.245000 ;
+    END
+  END out[4]
+  PIN out[3]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 697.130000 346.755000 697.600000 346.845000 ;
+    END
+  END out[3]
+  PIN out[2]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 697.130000 348.355000 697.600000 348.445000 ;
+    END
+  END out[2]
+  PIN out[1]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 697.130000 349.955000 697.600000 350.045000 ;
+    END
+  END out[1]
+  PIN out[0]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 697.130000 351.555000 697.600000 351.645000 ;
+    END
+  END out[0]
+  PIN inst[16]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END inst[16]
+  PIN inst[15]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END inst[15]
+  PIN inst[14]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END inst[14]
+  PIN inst[13]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END inst[13]
+  PIN inst[12]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END inst[12]
+  PIN inst[11]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END inst[11]
+  PIN inst[10]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END inst[10]
+  PIN inst[9]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END inst[9]
+  PIN inst[8]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END inst[8]
+  PIN inst[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END inst[7]
+  PIN inst[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END inst[6]
+  PIN inst[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END inst[5]
+  PIN inst[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END inst[4]
+  PIN inst[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END inst[3]
+  PIN inst[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END inst[2]
+  PIN inst[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END inst[1]
+  PIN inst[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END inst[0]
+  PIN reset
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END reset
+  OBS
+    LAYER M1 ;
+      RECT 0.000000 351.735000 697.600000 695.000000 ;
+      RECT 0.000000 351.465000 697.020000 351.735000 ;
+      RECT 0.000000 350.135000 697.600000 351.465000 ;
+      RECT 0.000000 349.865000 697.020000 350.135000 ;
+      RECT 0.000000 348.535000 697.600000 349.865000 ;
+      RECT 0.000000 348.265000 697.020000 348.535000 ;
+      RECT 0.000000 347.535000 697.600000 348.265000 ;
+      RECT 0.580000 347.265000 697.600000 347.535000 ;
+      RECT 0.000000 346.935000 697.600000 347.265000 ;
+      RECT 0.000000 346.665000 697.020000 346.935000 ;
+      RECT 0.000000 345.335000 697.600000 346.665000 ;
+      RECT 0.000000 345.065000 697.020000 345.335000 ;
+      RECT 0.000000 343.735000 697.600000 345.065000 ;
+      RECT 0.000000 343.465000 697.020000 343.735000 ;
+      RECT 0.000000 0.000000 697.600000 343.465000 ;
+    LAYER M2 ;
+      RECT 0.000000 0.000000 697.600000 695.000000 ;
+    LAYER M3 ;
+      RECT 0.000000 0.000000 697.600000 695.000000 ;
+    LAYER M4 ;
+      RECT 0.000000 0.000000 697.600000 695.000000 ;
+    LAYER M5 ;
+      RECT 0.000000 0.000000 697.600000 695.000000 ;
+    LAYER M6 ;
+      RECT 0.000000 0.000000 697.600000 695.000000 ;
+    LAYER M7 ;
+      RECT 0.000000 0.000000 697.600000 695.000000 ;
+    LAYER M8 ;
+      RECT 0.000000 0.000000 697.600000 695.000000 ;
+  END
+END fullchip
+
+END LIBRARY

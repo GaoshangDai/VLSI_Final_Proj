@@ -1,0 +1,1235 @@
+Information: Variable 'hdlin_enable_vpp' is obsolete and is being ignored. (INFO-100)
+Running PRESTO HDLC
+Compiling source file ./netlist/fullchip.v
+Presto compilation completed successfully.
+Loading db file '/home/linux/ieng6/ee260bwi22/public/PDKdata/db/tcbn65gplustc.db'
+Running PRESTO HDLC
+Compiling source file ./netlist/core.v
+Warning:  ./netlist/core.v:68: the undeclared symbol 'fifo_valid' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  ./netlist/core.v:105: Invalid escape sequence '\x' in call to '$display'. (VER-941)
+Warning:  ./netlist/core.v:105: Invalid escape sequence '\x' in call to '$display'. (VER-941)
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./netlist/sync.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./netlist/sfp_row.v
+Warning:  ./netlist/sfp_row.v:78: the undeclared symbol 'reset' assumed to have the default net type, which is 'wire'. (VER-936)
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./netlist/mac_col.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./netlist/mac_16in.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./netlist/mac_array.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./netlist/sram_w16.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./netlist/ofifo.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./netlist/fifo_depth16.v
+Warning:  ./netlist/fifo_depth16.v:20: The construct 'declaration initial assignment' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  ./netlist/fifo_depth16.v:21: The construct 'declaration initial assignment' is not supported in synthesis; it is ignored. (VER-708)
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./netlist/fifo_mux_16_1.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./netlist/fifo_mux_8_1.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./netlist/fifo_mux_2_1.v
+Presto compilation completed successfully.
+Warning: Detected use of obsolete/unsupported feature.  The following
+	will not be available in a future release of the application:
+	elaborate -update. Use plain elaborate instead (CMD-100)
+Loading db file '/software/ECE/DesignCompiler-Q2019.12/syn/Q-2019.12-SP5-3/libraries/syn/gtech.db'
+Loading db file '/software/ECE/DesignCompiler-Q2019.12/syn/Q-2019.12-SP5-3/libraries/syn/standard.sldb'
+  Loading link library 'tcbn65gplustc'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (fullchip)
+Elaborated 1 design.
+Current design is now 'fullchip'.
+Information: Building the design 'core' instantiated from design 'fullchip' with
+	the parameters "bw=8,bw_psum=20,col=8,pr=16". (HDL-193)
+Warning:  ./netlist/core.v:105: Invalid escape sequence '\x' in call to '$display'. (VER-941)
+Warning:  ./netlist/core.v:105: Invalid escape sequence '\x' in call to '$display'. (VER-941)
+$display output: Memory write to PSUM mem add   ??????
+Presto compilation completed successfully. (core_col8_bw8_bw_psum20_pr16)
+Information: Building the design 'mac_array' instantiated from design 'core_col8_bw8_bw_psum20_pr16' with
+	the parameters "bw=8,bw_psum=20,col=8,pr=16". (HDL-193)
+Presto compilation completed successfully. (mac_array_col8_bw8_bw_psum20_pr16)
+Information: Building the design 'ofifo' instantiated from design 'core_col8_bw8_bw_psum20_pr16' with
+	the parameters "bw=20,col=8". (HDL-193)
+Presto compilation completed successfully. (ofifo_col8_bw20)
+Information: Building the design 'sram_w16' instantiated from design 'core_col8_bw8_bw_psum20_pr16' with
+	the parameters "sram_bit=128". (HDL-193)
+
+Statistics for case statements in always block at line 48 in file
+	'./netlist/sram_w16.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            51            |    auto/auto     |
+|            72            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine sram_w16_sram_bit128 line 48 in file
+		'./netlist/sram_w16.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    memory12_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|    memory10_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|    memory11_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|    memory13_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|    memory14_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|        Q_reg        | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|    memory15_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory0_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory1_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory2_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory3_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory4_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory5_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory6_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory7_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory8_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory9_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (sram_w16_sram_bit128)
+Information: Building the design 'sram_w16' instantiated from design 'core_col8_bw8_bw_psum20_pr16' with
+	the parameters "sram_bit=160". (HDL-193)
+
+Statistics for case statements in always block at line 48 in file
+	'./netlist/sram_w16.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            51            |    auto/auto     |
+|            72            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine sram_w16_sram_bit160 line 48 in file
+		'./netlist/sram_w16.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    memory12_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|    memory10_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|    memory11_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|    memory13_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|    memory14_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|        Q_reg        | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|    memory15_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory0_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory1_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory2_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory3_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory4_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory5_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory6_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory7_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory8_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+|     memory9_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (sram_w16_sram_bit160)
+Information: Building the design 'mac_col' instantiated from design 'mac_array_col8_bw8_bw_psum20_pr16' with
+	the parameters "bw=8,bw_psum=20,pr=16,col_id=1". (HDL-193)
+Warning:  ./netlist/mac_col.v:49: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine mac_col_bw8_bw_psum20_pr16_col_id1 line 37 in file
+		'./netlist/mac_col.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     query_q_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      key_q_reg      | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (mac_col_bw8_bw_psum20_pr16_col_id1)
+Information: Building the design 'mac_col' instantiated from design 'mac_array_col8_bw8_bw_psum20_pr16' with
+	the parameters "bw=8,bw_psum=20,pr=16,col_id=2". (HDL-193)
+Warning:  ./netlist/mac_col.v:49: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine mac_col_bw8_bw_psum20_pr16_col_id2 line 37 in file
+		'./netlist/mac_col.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     query_q_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      key_q_reg      | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (mac_col_bw8_bw_psum20_pr16_col_id2)
+Information: Building the design 'mac_col' instantiated from design 'mac_array_col8_bw8_bw_psum20_pr16' with
+	the parameters "bw=8,bw_psum=20,pr=16,col_id=3". (HDL-193)
+Warning:  ./netlist/mac_col.v:49: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine mac_col_bw8_bw_psum20_pr16_col_id3 line 37 in file
+		'./netlist/mac_col.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     query_q_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      key_q_reg      | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (mac_col_bw8_bw_psum20_pr16_col_id3)
+Information: Building the design 'mac_col' instantiated from design 'mac_array_col8_bw8_bw_psum20_pr16' with
+	the parameters "bw=8,bw_psum=20,pr=16,col_id=4". (HDL-193)
+Warning:  ./netlist/mac_col.v:49: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine mac_col_bw8_bw_psum20_pr16_col_id4 line 37 in file
+		'./netlist/mac_col.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     query_q_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      key_q_reg      | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (mac_col_bw8_bw_psum20_pr16_col_id4)
+Information: Building the design 'mac_col' instantiated from design 'mac_array_col8_bw8_bw_psum20_pr16' with
+	the parameters "bw=8,bw_psum=20,pr=16,col_id=5". (HDL-193)
+Warning:  ./netlist/mac_col.v:49: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine mac_col_bw8_bw_psum20_pr16_col_id5 line 37 in file
+		'./netlist/mac_col.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     query_q_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      key_q_reg      | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (mac_col_bw8_bw_psum20_pr16_col_id5)
+Information: Building the design 'mac_col' instantiated from design 'mac_array_col8_bw8_bw_psum20_pr16' with
+	the parameters "bw=8,bw_psum=20,pr=16,col_id=6". (HDL-193)
+Warning:  ./netlist/mac_col.v:49: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine mac_col_bw8_bw_psum20_pr16_col_id6 line 37 in file
+		'./netlist/mac_col.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     query_q_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      key_q_reg      | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (mac_col_bw8_bw_psum20_pr16_col_id6)
+Information: Building the design 'mac_col' instantiated from design 'mac_array_col8_bw8_bw_psum20_pr16' with
+	the parameters "bw=8,bw_psum=20,pr=16,col_id=7". (HDL-193)
+Warning:  ./netlist/mac_col.v:49: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine mac_col_bw8_bw_psum20_pr16_col_id7 line 37 in file
+		'./netlist/mac_col.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     query_q_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      key_q_reg      | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (mac_col_bw8_bw_psum20_pr16_col_id7)
+Information: Building the design 'mac_col' instantiated from design 'mac_array_col8_bw8_bw_psum20_pr16' with
+	the parameters "bw=8,bw_psum=20,pr=16,col_id=8". (HDL-193)
+Warning:  ./netlist/mac_col.v:49: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine mac_col_bw8_bw_psum20_pr16_col_id8 line 37 in file
+		'./netlist/mac_col.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     query_q_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      key_q_reg      | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (mac_col_bw8_bw_psum20_pr16_col_id8)
+Information: Building the design 'fifo_depth16' instantiated from design 'ofifo_col8_bw20' with
+	the parameters "bw=20,simd=1". (HDL-193)
+
+Statistics for case statements in always block at line 63 in file
+	'./netlist/fifo_depth16.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            73            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine fifo_depth16_bw20_simd1 line 53 in file
+		'./netlist/fifo_depth16.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     rd_ptr_reg      | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fifo_depth16_bw20_simd1 line 63 in file
+		'./netlist/fifo_depth16.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       q6_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q10_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q7_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q8_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q9_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q11_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|     wr_ptr_reg      | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q12_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q13_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q14_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q15_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q0_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q1_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q2_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q3_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q4_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       q5_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (fifo_depth16_bw20_simd1)
+Information: Building the design 'mac_16in' instantiated from design 'mac_col_bw8_bw_psum20_pr16_col_id1' with
+	the parameters "bw=8,bw_psum=20,pr=16". (HDL-193)
+Presto compilation completed successfully. (mac_16in_bw8_bw_psum20_pr16)
+Information: Building the design 'fifo_mux_16_1' instantiated from design 'fifo_depth16_bw20_simd1' with
+	the parameters "bw=20,simd=1". (HDL-193)
+Presto compilation completed successfully. (fifo_mux_16_1_bw20_simd1)
+Information: Building the design 'fifo_mux_8_1' instantiated from design 'fifo_mux_16_1_bw20_simd1' with
+	the parameters "bw=20,simd=1". (HDL-193)
+Presto compilation completed successfully. (fifo_mux_8_1_bw20_simd1)
+Information: Building the design 'fifo_mux_2_1' instantiated from design 'fifo_mux_16_1_bw20_simd1' with
+	the parameters "bw=20,simd=1". (HDL-193)
+Presto compilation completed successfully. (fifo_mux_2_1_bw20_simd1)
+Current design is 'fullchip'.
+
+  Linking design 'fullchip'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (19 designs)              /home/linux/ieng6/ee260bwi22/kawan/ece260_project/syn/fullchip.db, etc
+  tcbn65gplustc (library)     /home/linux/ieng6/ee260bwi22/public/PDKdata/db/tcbn65gplustc.db
+
+
+Reading SDC version 2.1...
+
+#   Propagate Constraints from cell core_instance/ (core_col8_bw8_bw_psum20_pr16) #
+
+#   Propagate Constraints from cell core_instance/psum_mem_instance/ (sram_w16_sram_bit160) #
+
+#   Propagate Constraints from cell core_instance/kmem_instance/ (sram_w16_sram_bit128) #
+
+#   Propagate Constraints from cell core_instance/qmem_instance/ (sram_w16_sram_bit128) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/ (ofifo_col8_bw20) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/ (fifo_depth16_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/ (fifo_mux_16_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1b/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1a/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[7].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/ (fifo_depth16_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/ (fifo_mux_16_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1b/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1a/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[6].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/ (fifo_depth16_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/ (fifo_mux_16_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1b/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1a/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[5].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/ (fifo_depth16_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/ (fifo_mux_16_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1b/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1a/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[4].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/ (fifo_depth16_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/ (fifo_mux_16_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1b/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1a/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[3].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/ (fifo_depth16_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/ (fifo_mux_16_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1b/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1a/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[2].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/ (fifo_depth16_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/ (fifo_mux_16_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1b/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1a/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[1].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/ (fifo_depth16_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/ (fifo_mux_16_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1b/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1b/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1a/ (fifo_mux_8_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1g/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1f/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1e/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1d/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1c/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1b/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/ofifo_inst/col_idx[0].fifo_instance/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1a/ (fifo_mux_2_1_bw20_simd1) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/ (mac_array_col8_bw8_bw_psum20_pr16) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[8].mac_col_inst/ (mac_col_bw8_bw_psum20_pr16_col_id8) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[8].mac_col_inst/mac_16in_instance/ (mac_16in_bw8_bw_psum20_pr16) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[7].mac_col_inst/ (mac_col_bw8_bw_psum20_pr16_col_id7) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[7].mac_col_inst/mac_16in_instance/ (mac_16in_bw8_bw_psum20_pr16) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[6].mac_col_inst/ (mac_col_bw8_bw_psum20_pr16_col_id6) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[6].mac_col_inst/mac_16in_instance/ (mac_16in_bw8_bw_psum20_pr16) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[5].mac_col_inst/ (mac_col_bw8_bw_psum20_pr16_col_id5) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[5].mac_col_inst/mac_16in_instance/ (mac_16in_bw8_bw_psum20_pr16) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[4].mac_col_inst/ (mac_col_bw8_bw_psum20_pr16_col_id4) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[4].mac_col_inst/mac_16in_instance/ (mac_16in_bw8_bw_psum20_pr16) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[3].mac_col_inst/ (mac_col_bw8_bw_psum20_pr16_col_id3) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[3].mac_col_inst/mac_16in_instance/ (mac_16in_bw8_bw_psum20_pr16) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[2].mac_col_inst/ (mac_col_bw8_bw_psum20_pr16_col_id2) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[2].mac_col_inst/mac_16in_instance/ (mac_16in_bw8_bw_psum20_pr16) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[1].mac_col_inst/ (mac_col_bw8_bw_psum20_pr16_col_id1) #
+
+#   Propagate Constraints from cell core_instance/mac_array_instance/col_idx[1].mac_col_inst/mac_16in_instance/ (mac_16in_bw8_bw_psum20_pr16) #
+Current design is 'fullchip'.
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Can't find object '/home/linux/ieng6/ee260bwi22/public/PDKdata/db/tcbn65gplustc.db/BUFFD8/A' in design 'fullchip'. (UID-95)
+Error: value '' for option 'value' not of type 'float' (CMD-009)
+Current design is 'fullchip'.
+Current design is 'core_col8_bw8_bw_psum20_pr16'.
+Current design is 'mac_array_col8_bw8_bw_psum20_pr16'.
+Current design is 'ofifo_col8_bw20'.
+Current design is 'sram_w16_sram_bit128'.
+Current design is 'sram_w16_sram_bit160'.
+Current design is 'mac_col_bw8_bw_psum20_pr16_col_id1'.
+Current design is 'mac_col_bw8_bw_psum20_pr16_col_id2'.
+Current design is 'mac_col_bw8_bw_psum20_pr16_col_id3'.
+Current design is 'mac_col_bw8_bw_psum20_pr16_col_id4'.
+Current design is 'mac_col_bw8_bw_psum20_pr16_col_id5'.
+Current design is 'mac_col_bw8_bw_psum20_pr16_col_id6'.
+Current design is 'mac_col_bw8_bw_psum20_pr16_col_id7'.
+Current design is 'mac_col_bw8_bw_psum20_pr16_col_id8'.
+Current design is 'fifo_depth16_bw20_simd1'.
+Current design is 'mac_16in_bw8_bw_psum20_pr16'.
+Current design is 'fifo_mux_16_1_bw20_simd1'.
+Current design is 'fifo_mux_8_1_bw20_simd1'.
+Current design is 'fifo_mux_2_1_bw20_simd1'.
+Current design is 'fullchip'.
+Information: Changed wire load model for 'sram_w16_sram_bit160' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'sram_w16_sram_bit128' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'sram_w16_sram_bit128' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_16_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_depth16_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_16_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_depth16_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_16_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_depth16_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_16_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_depth16_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_16_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_depth16_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_16_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_depth16_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_16_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_depth16_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_2_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_8_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_mux_16_1_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'fifo_depth16_bw20_simd1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'ofifo_col8_bw20' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_16in_bw8_bw_psum20_pr16' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_col_bw8_bw_psum20_pr16_col_id8' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_16in_bw8_bw_psum20_pr16' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_col_bw8_bw_psum20_pr16_col_id7' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_16in_bw8_bw_psum20_pr16' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_col_bw8_bw_psum20_pr16_col_id6' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_16in_bw8_bw_psum20_pr16' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_col_bw8_bw_psum20_pr16_col_id5' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_16in_bw8_bw_psum20_pr16' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_col_bw8_bw_psum20_pr16_col_id4' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_16in_bw8_bw_psum20_pr16' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_col_bw8_bw_psum20_pr16_col_id3' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_16in_bw8_bw_psum20_pr16' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_col_bw8_bw_psum20_pr16_col_id2' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_16in_bw8_bw_psum20_pr16' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_col_bw8_bw_psum20_pr16_col_id1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'mac_array_col8_bw8_bw_psum20_pr16' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'core_col8_bw8_bw_psum20_pr16' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Updating graph... (UID-83)
+Warning: Design 'fullchip' contains 20 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Loading db file '/software/ECE/DesignCompiler-Q2019.12/syn/Q-2019.12-SP5-3/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Warning: The -timing_high_effort_script option is ignored.  (OPT-1342)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | Q-2019.12-DWBB_201912.5 |     *     |
+| Licensed DW Building Blocks        | Q-2019.12-DWBB_201912.5 |     *     |
+============================================================================
+
+
+Information: There are 72 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'fullchip'
+
+Loaded alib file './alib-52/tcbn65gplustc.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'fullchip'
+Information: Added key list 'DesignWare' to design 'fullchip'. (DDB-72)
+ Implement Synthetic for 'fullchip'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'TIEL' in the library 'tcbn65gplustc' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIEH' in the library 'tcbn65gplustc' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+	Number of combinational loops found: 0
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------

@@ -1,0 +1,14 @@
+./netlist/fullchip_tb.v
+./netlist/fullchip.v
+./netlist/core.v
+./netlist/sync.v
+./netlist/sfp_row.v
+./netlist/mac_col.v
+./netlist/mac_16in.v
+./netlist/mac_array.v
+./netlist/sram_w16.v
+./netlist/ofifo.v
+./netlist/fifo_depth16.v
+./netlist/fifo_mux_16_1.v
+./netlist/fifo_mux_8_1.v
+./netlist/fifo_mux_2_1.v
