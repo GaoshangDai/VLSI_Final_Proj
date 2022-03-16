@@ -41,9 +41,9 @@ wire  pmem_rd;
 wire  pmem_wr; 
 wire [bw_psum+3:0] sum_q;
 
-assign fifo_ext_rd = inst[19];
-assign div = inst[18];
-assign acc = inst[17];
+//assign fifo_ext_rd = inst[19];
+//assign div = inst[18];
+//assign acc = inst[17];
 assign ofifo_rd = inst[16];
 assign qkmem_add = inst[15:12];
 assign pmem_add = inst[11:8];
@@ -59,7 +59,7 @@ assign mac_in  = inst[6] ? kmem_out : qmem_out;
 assign pmem_in = wr_norm ? sfp_out : fifo_out;
 assign sfp_in = pmem_out;
 assign out = pmem_out;
-assign sum_in = 0;
+//assign sum_in = 0;
 assign sum_out_temp1 = {{(3){out[bw_psum*1-1:bw_psum*0]}},out[bw_psum*1-1:bw_psum*0]}
 	+	{{(3){out[bw_psum*2-1:bw_psum*1]}},out[bw_psum*2-1:bw_psum*1]}
 	+	{{(3){out[bw_psum*3-1:bw_psum*2]}},out[bw_psum*3-1:bw_psum*2]}

@@ -73,10 +73,17 @@ reg signed [bw_psum-1:0] temp5bcore1abs, temp5bcore2abs;
 reg signed [bw_psum+3:0] temp_sum_core1, temp_sum_core2;
 reg signed [bw_psum+3:0] psum_sign_extend;
 reg signed [bw_psum*col-1:0] temp16bcore1, temp16bcore2;
+
 reg [bw_psum*col-1:0] normalized_out_col_core1[total_cycle-1:0];
 reg [bw_psum*col-1:0] normalized_out_col_core2[total_cycle-1:0];
+
+reg [bw_psum*col-1:0] normalized_out_col_core11;
+reg [bw_psum*col-1:0] normalized_out_col_core22;
+
 reg signed [bw_psum-1:0] normalized_out_core1[total_cycle-1:0][col-1:0];
 reg signed [bw_psum-1:0] normalized_out_core2[total_cycle-1:0][col-1:0];
+
+
 
 fullchip #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) fullchip_instance (
       .reset(reset),
@@ -227,13 +234,40 @@ $display("##### Estimated Normalized Result #####");
          sumcores[t] = sumcore1[t][bw_psum+3:7] + sumcore2[t][bw_psum+3:7];
          resultcore1[t][q] = psumcore1[t][q]/sumcores[t];
          resultcore2[t][q] = psumcore2[t][q]/sumcores[t];
+/*
+	 $display("sumcore @cycle%2d:  %40h", t, sumcores[t]);
+     	 $display("psumcore1 @cycle%2d: core1 -> %40h", t, psumcore1[t][q]);
+	 $display("psumcore2 @cycle%2d: core2 -> %40h", t, psumcore2[t][q]);
+*/
          normalized_out_core1[t][q] = resultcore1[t][q];
          normalized_out_core2[t][q] = resultcore2[t][q];
+
+     	 $display("normcore1out @cycle%2d: core1 -> %40h", t, normalized_out_core1[t][q]);
+	 $display("normcore2out @cycle%2d: core2 -> %40h", t, normalized_out_core2[t][q]);
+/*
          normalized_out_col_core1[t] = {normalized_out_col_core1[t][139:0], normalized_out_col_core1[t][q]}; 
          normalized_out_col_core2[t] = {normalized_out_col_core2[t][139:0], normalized_out_col_core2[t][q]}; 
+
+     	 $display("normcore1out @cycle%2d: core1 -> %40h", t, normalized_out_core1[t][q]);
+	 $display("normcore2out @cycle%2d: core2 -> %40h", t, normalized_out_core2[t][q]);
+*/
+/*
+	 normalized_out_col_core11 = {normalized_out_col_core11[139:0], normalized_out_col_core1[t][q]}; 
+         normalized_out_col_core22 = {normalized_out_col_core22[139:0], normalized_out_col_core2[t][q]}; 
+*/
+         normalized_out_col_core1[t] = {normalized_out_col_core1[t][139:0], normalized_out_core1[t][q]}; 
+         normalized_out_col_core2[t] = {normalized_out_col_core2[t][139:0], normalized_out_core2[t][q]}; 
+
       end
+     
      $display("norm @cycle%2d: core1 -> %40h", t, normalized_out_col_core1[t]);
      $display("norm @cycle%2d: core2 -> %40h", t, normalized_out_col_core2[t]);
+
+/*
+     $display("norm @cycle%2d: core1 -> %40h", t, normalized_out_col_core11);
+     $display("norm @cycle%2d: core2 -> %40h", t, normalized_out_col_core22);
+*/
+
   end
 
 
