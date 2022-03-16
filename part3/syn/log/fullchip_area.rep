@@ -1,0 +1,56 @@
+Warning: Design 'fullchip' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : reference
+Design : fullchip
+Version: Q-2019.12-SP5-3
+Date   : Wed Mar 16 11:56:54 2022
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+core                              0.000000       2      0.000000  b
+-----------------------------------------------------------------------------
+Total 1 references                                      0.000000
+1
+ 
+****************************************
+Report : reference
+Design : fullchip
+Version: Q-2019.12-SP5-3
+Date   : Wed Mar 16 12:25:39 2022
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+core_col8_bw8_bw_psum20_pr16_0
+                              234748.076489
+                                                 1  234748.076489 h, n
+core_col8_bw8_bw_psum20_pr16_1
+                              234753.116489
+                                                 1  234753.116489 h, n
+-----------------------------------------------------------------------------
+Total 2 references                                  469501.192978
+1
