@@ -1,0 +1,2918 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 100
+        -transition_time
+        -capacitance
+Design : fullchip
+Version: Q-2019.12-SP5-3
+Date   : Wed Mar 16 12:25:50 2022
+****************************************
+
+Operating Conditions: NCCOM   Library: tcbn65gplustc
+Wire Load Model Mode: segmented
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_39_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[39]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_39_/CP (EDFQD1)           0.440     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_39_/Q (EDFQD1)            0.162     0.192      0.192 r
+  core_instance1/psum_mem_instance/Q[39] (net)    29     0.027               0.000      0.192 r
+  core_instance1/psum_mem_instance/Q[39] (sram_w16_sram_bit160_1)            0.000      0.192 r
+  core_instance1/out[39] (net)                           0.027               0.000      0.192 r
+  core_instance1/out[39] (core_col8_bw8_bw_psum20_pr16_1)                    0.000      0.192 r
+  out_core1[39] (net)                                    0.027               0.000      0.192 r
+  out_core1[39] (out)                                              0.162     0.000      0.192 r
+  data arrival time                                                                     0.192
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_39_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[39]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_39_/CP (EDFQD1)           0.440     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_39_/Q (EDFQD1)            0.162     0.192      0.192 r
+  core_instance2/psum_mem_instance/Q[39] (net)    29     0.027               0.000      0.192 r
+  core_instance2/psum_mem_instance/Q[39] (sram_w16_sram_bit160_0)            0.000      0.192 r
+  core_instance2/out[39] (net)                           0.027               0.000      0.192 r
+  core_instance2/out[39] (core_col8_bw8_bw_psum20_pr16_0)                    0.000      0.192 r
+  out_core2[39] (net)                                    0.027               0.000      0.192 r
+  out_core2[39] (out)                                              0.162     0.000      0.192 r
+  data arrival time                                                                     0.192
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_159_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[159]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_159_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_159_/Q (EDFQD1)           0.160     0.191      0.191 r
+  core_instance1/psum_mem_instance/Q[159] (net)    31    0.027               0.000      0.191 r
+  core_instance1/psum_mem_instance/Q[159] (sram_w16_sram_bit160_1)           0.000      0.191 r
+  core_instance1/out[159] (net)                          0.027               0.000      0.191 r
+  core_instance1/out[159] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.191 r
+  out_core1[159] (net)                                   0.027               0.000      0.191 r
+  out_core1[159] (out)                                             0.160     0.000      0.191 r
+  data arrival time                                                                     0.191
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_119_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[119]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_119_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_119_/Q (EDFQD1)           0.159     0.191      0.191 r
+  core_instance2/psum_mem_instance/Q[119] (net)    31    0.027               0.000      0.191 r
+  core_instance2/psum_mem_instance/Q[119] (sram_w16_sram_bit160_0)           0.000      0.191 r
+  core_instance2/out[119] (net)                          0.027               0.000      0.191 r
+  core_instance2/out[119] (core_col8_bw8_bw_psum20_pr16_0)                   0.000      0.191 r
+  out_core2[119] (net)                                   0.027               0.000      0.191 r
+  out_core2[119] (out)                                             0.159     0.000      0.191 r
+  data arrival time                                                                     0.191
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_159_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[159]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_159_/CP (EDFQD1)          0.440     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_159_/Q (EDFQD1)           0.160     0.191      0.191 r
+  core_instance2/psum_mem_instance/Q[159] (net)    31    0.027               0.000      0.191 r
+  core_instance2/psum_mem_instance/Q[159] (sram_w16_sram_bit160_0)           0.000      0.191 r
+  core_instance2/out[159] (net)                          0.027               0.000      0.191 r
+  core_instance2/out[159] (core_col8_bw8_bw_psum20_pr16_0)                   0.000      0.191 r
+  out_core2[159] (net)                                   0.027               0.000      0.191 r
+  out_core2[159] (out)                                             0.160     0.000      0.191 r
+  data arrival time                                                                     0.191
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_119_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[119]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_119_/CP (EDFQD1)          0.440     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_119_/Q (EDFQD1)           0.159     0.190      0.190 r
+  core_instance1/psum_mem_instance/Q[119] (net)    31    0.027               0.000      0.190 r
+  core_instance1/psum_mem_instance/Q[119] (sram_w16_sram_bit160_1)           0.000      0.190 r
+  core_instance1/out[119] (net)                          0.027               0.000      0.190 r
+  core_instance1/out[119] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.190 r
+  out_core1[119] (net)                                   0.027               0.000      0.190 r
+  out_core1[119] (out)                                             0.159     0.000      0.190 r
+  data arrival time                                                                     0.190
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_79_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[79]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_79_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_79_/Q (EDFQD1)            0.158     0.190      0.190 r
+  core_instance1/psum_mem_instance/Q[79] (net)    29     0.026               0.000      0.190 r
+  core_instance1/psum_mem_instance/Q[79] (sram_w16_sram_bit160_1)            0.000      0.190 r
+  core_instance1/out[79] (net)                           0.026               0.000      0.190 r
+  core_instance1/out[79] (core_col8_bw8_bw_psum20_pr16_1)                    0.000      0.190 r
+  out_core1[79] (net)                                    0.026               0.000      0.190 r
+  out_core1[79] (out)                                              0.158     0.000      0.190 r
+  data arrival time                                                                     0.190
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_139_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[139]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_139_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_139_/Q (EDFQD1)           0.158     0.190      0.190 r
+  core_instance2/psum_mem_instance/Q[139] (net)    30    0.026               0.000      0.190 r
+  core_instance2/psum_mem_instance/Q[139] (sram_w16_sram_bit160_0)           0.000      0.190 r
+  core_instance2/out[139] (net)                          0.026               0.000      0.190 r
+  core_instance2/out[139] (core_col8_bw8_bw_psum20_pr16_0)                   0.000      0.190 r
+  out_core2[139] (net)                                   0.026               0.000      0.190 r
+  out_core2[139] (out)                                             0.158     0.000      0.190 r
+  data arrival time                                                                     0.190
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_79_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[79]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_79_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_79_/Q (EDFQD1)            0.158     0.190      0.190 r
+  core_instance2/psum_mem_instance/Q[79] (net)    29     0.026               0.000      0.190 r
+  core_instance2/psum_mem_instance/Q[79] (sram_w16_sram_bit160_0)            0.000      0.190 r
+  core_instance2/out[79] (net)                           0.026               0.000      0.190 r
+  core_instance2/out[79] (core_col8_bw8_bw_psum20_pr16_0)                    0.000      0.190 r
+  out_core2[79] (net)                                    0.026               0.000      0.190 r
+  out_core2[79] (out)                                              0.158     0.000      0.190 r
+  data arrival time                                                                     0.190
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_139_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[139]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_139_/CP (EDFQD1)          0.440     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_139_/Q (EDFQD1)           0.158     0.190      0.190 r
+  core_instance1/psum_mem_instance/Q[139] (net)    30    0.026               0.000      0.190 r
+  core_instance1/psum_mem_instance/Q[139] (sram_w16_sram_bit160_1)           0.000      0.190 r
+  core_instance1/out[139] (net)                          0.026               0.000      0.190 r
+  core_instance1/out[139] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.190 r
+  out_core1[139] (net)                                   0.026               0.000      0.190 r
+  out_core1[139] (out)                                             0.158     0.000      0.190 r
+  data arrival time                                                                     0.190
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_59_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[59]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_59_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_59_/Q (EDFQD1)            0.153     0.188      0.188 r
+  core_instance1/psum_mem_instance/Q[59] (net)    30     0.026               0.000      0.188 r
+  core_instance1/psum_mem_instance/Q[59] (sram_w16_sram_bit160_1)            0.000      0.188 r
+  core_instance1/out[59] (net)                           0.026               0.000      0.188 r
+  core_instance1/out[59] (core_col8_bw8_bw_psum20_pr16_1)                    0.000      0.188 r
+  out_core1[59] (net)                                    0.026               0.000      0.188 r
+  out_core1[59] (out)                                              0.153     0.000      0.188 r
+  data arrival time                                                                     0.188
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_59_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[59]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_59_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_59_/Q (EDFQD1)            0.153     0.188      0.188 r
+  core_instance2/psum_mem_instance/Q[59] (net)    30     0.026               0.000      0.188 r
+  core_instance2/psum_mem_instance/Q[59] (sram_w16_sram_bit160_0)            0.000      0.188 r
+  core_instance2/out[59] (net)                           0.026               0.000      0.188 r
+  core_instance2/out[59] (core_col8_bw8_bw_psum20_pr16_0)                    0.000      0.188 r
+  out_core2[59] (net)                                    0.026               0.000      0.188 r
+  out_core2[59] (out)                                              0.153     0.000      0.188 r
+  data arrival time                                                                     0.188
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_99_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[99]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_99_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_99_/Q (EDFQD1)            0.152     0.187      0.187 r
+  core_instance2/psum_mem_instance/Q[99] (net)    28     0.025               0.000      0.187 r
+  core_instance2/psum_mem_instance/Q[99] (sram_w16_sram_bit160_0)            0.000      0.187 r
+  core_instance2/out[99] (net)                           0.025               0.000      0.187 r
+  core_instance2/out[99] (core_col8_bw8_bw_psum20_pr16_0)                    0.000      0.187 r
+  out_core2[99] (net)                                    0.025               0.000      0.187 r
+  out_core2[99] (out)                                              0.152     0.000      0.187 r
+  data arrival time                                                                     0.187
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_99_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[99]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_99_/CP (EDFQD1)           0.440     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_99_/Q (EDFQD1)            0.152     0.186      0.186 r
+  core_instance1/psum_mem_instance/Q[99] (net)    28     0.025               0.000      0.186 r
+  core_instance1/psum_mem_instance/Q[99] (sram_w16_sram_bit160_1)            0.000      0.186 r
+  core_instance1/out[99] (net)                           0.025               0.000      0.186 r
+  core_instance1/out[99] (core_col8_bw8_bw_psum20_pr16_1)                    0.000      0.186 r
+  out_core1[99] (net)                                    0.025               0.000      0.186 r
+  out_core1[99] (out)                                              0.152     0.000      0.186 r
+  data arrival time                                                                     0.186
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_19_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[19]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_19_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_19_/Q (EDFQD1)            0.146     0.184      0.184 r
+  core_instance2/psum_mem_instance/Q[19] (net)    28     0.024               0.000      0.184 r
+  core_instance2/psum_mem_instance/Q[19] (sram_w16_sram_bit160_0)            0.000      0.184 r
+  core_instance2/out[19] (net)                           0.024               0.000      0.184 r
+  core_instance2/out[19] (core_col8_bw8_bw_psum20_pr16_0)                    0.000      0.184 r
+  out_core2[19] (net)                                    0.024               0.000      0.184 r
+  out_core2[19] (out)                                              0.146     0.000      0.184 r
+  data arrival time                                                                     0.184
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_19_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[19]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_19_/CP (EDFQD1)           0.440     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_19_/Q (EDFQD1)            0.146     0.183      0.183 r
+  core_instance1/psum_mem_instance/Q[19] (net)    28     0.024               0.000      0.183 r
+  core_instance1/psum_mem_instance/Q[19] (sram_w16_sram_bit160_1)            0.000      0.183 r
+  core_instance1/out[19] (net)                           0.024               0.000      0.183 r
+  core_instance1/out[19] (core_col8_bw8_bw_psum20_pr16_1)                    0.000      0.183 r
+  out_core1[19] (net)                                    0.024               0.000      0.183 r
+  out_core1[19] (out)                                              0.146     0.000      0.183 r
+  data arrival time                                                                     0.183
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_140_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[140]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_140_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_140_/Q (EDFQD1)           0.047     0.150      0.150 f
+  core_instance1/psum_mem_instance/Q[140] (net)     9    0.012               0.000      0.150 f
+  core_instance1/psum_mem_instance/Q[140] (sram_w16_sram_bit160_1)           0.000      0.150 f
+  core_instance1/out[140] (net)                          0.012               0.000      0.150 f
+  core_instance1/out[140] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.150 f
+  out_core1[140] (net)                                   0.012               0.000      0.150 f
+  out_core1[140] (out)                                             0.047     0.000      0.150 f
+  data arrival time                                                                     0.150
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_140_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[140]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_140_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_140_/Q (EDFQD1)           0.047     0.150      0.150 f
+  core_instance2/psum_mem_instance/Q[140] (net)     9    0.012               0.000      0.150 f
+  core_instance2/psum_mem_instance/Q[140] (sram_w16_sram_bit160_0)           0.000      0.150 f
+  core_instance2/out[140] (net)                          0.012               0.000      0.150 f
+  core_instance2/out[140] (core_col8_bw8_bw_psum20_pr16_0)                   0.000      0.150 f
+  out_core2[140] (net)                                   0.012               0.000      0.150 f
+  out_core2[140] (out)                                             0.047     0.000      0.150 f
+  data arrival time                                                                     0.150
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_40_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[40]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_40_/CP (EDFQD1)           0.440     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_40_/Q (EDFQD1)            0.043     0.148      0.148 f
+  core_instance1/psum_mem_instance/Q[40] (net)     9     0.010               0.000      0.148 f
+  core_instance1/psum_mem_instance/Q[40] (sram_w16_sram_bit160_1)            0.000      0.148 f
+  core_instance1/out[40] (net)                           0.010               0.000      0.148 f
+  core_instance1/out[40] (core_col8_bw8_bw_psum20_pr16_1)                    0.000      0.148 f
+  out_core1[40] (net)                                    0.010               0.000      0.148 f
+  out_core1[40] (out)                                              0.043     0.000      0.148 f
+  data arrival time                                                                     0.148
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_40_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[40]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_40_/CP (EDFQD1)           0.440     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_40_/Q (EDFQD1)            0.043     0.148      0.148 f
+  core_instance2/psum_mem_instance/Q[40] (net)     9     0.010               0.000      0.148 f
+  core_instance2/psum_mem_instance/Q[40] (sram_w16_sram_bit160_0)            0.000      0.148 f
+  core_instance2/out[40] (net)                           0.010               0.000      0.148 f
+  core_instance2/out[40] (core_col8_bw8_bw_psum20_pr16_0)                    0.000      0.148 f
+  out_core2[40] (net)                                    0.010               0.000      0.148 f
+  out_core2[40] (out)                                              0.043     0.000      0.148 f
+  data arrival time                                                                     0.148
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_20_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[20]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_20_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_20_/Q (EDFQD1)            0.042     0.148      0.148 f
+  core_instance1/psum_mem_instance/Q[20] (net)     9     0.010               0.000      0.148 f
+  core_instance1/psum_mem_instance/Q[20] (sram_w16_sram_bit160_1)            0.000      0.148 f
+  core_instance1/out[20] (net)                           0.010               0.000      0.148 f
+  core_instance1/out[20] (core_col8_bw8_bw_psum20_pr16_1)                    0.000      0.148 f
+  out_core1[20] (net)                                    0.010               0.000      0.148 f
+  out_core1[20] (out)                                              0.042     0.000      0.148 f
+  data arrival time                                                                     0.148
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_20_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[20]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_20_/CP (EDFQD1)           0.440     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_20_/Q (EDFQD1)            0.042     0.147      0.147 f
+  core_instance2/psum_mem_instance/Q[20] (net)     9     0.010               0.000      0.147 f
+  core_instance2/psum_mem_instance/Q[20] (sram_w16_sram_bit160_0)            0.000      0.147 f
+  core_instance2/out[20] (net)                           0.010               0.000      0.147 f
+  core_instance2/out[20] (core_col8_bw8_bw_psum20_pr16_0)                    0.000      0.147 f
+  out_core2[20] (net)                                    0.010               0.000      0.147 f
+  out_core2[20] (out)                                              0.042     0.000      0.147 f
+  data arrival time                                                                     0.147
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_0_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[0]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_0_/CP (EDFQD1)            0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_0_/Q (EDFQD1)             0.038     0.145      0.145 f
+  core_instance1/psum_mem_instance/Q[0] (net)     9      0.009               0.000      0.145 f
+  core_instance1/psum_mem_instance/Q[0] (sram_w16_sram_bit160_1)             0.000      0.145 f
+  core_instance1/out[0] (net)                            0.009               0.000      0.145 f
+  core_instance1/out[0] (core_col8_bw8_bw_psum20_pr16_1)                     0.000      0.145 f
+  out_core1[0] (net)                                     0.009               0.000      0.145 f
+  out_core1[0] (out)                                               0.038     0.000      0.145 f
+  data arrival time                                                                     0.145
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_120_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[120]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_120_/CP (EDFQD1)          0.440     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_120_/Q (EDFQD1)           0.039     0.145      0.145 f
+  core_instance1/psum_mem_instance/Q[120] (net)     9    0.009               0.000      0.145 f
+  core_instance1/psum_mem_instance/Q[120] (sram_w16_sram_bit160_1)           0.000      0.145 f
+  core_instance1/out[120] (net)                          0.009               0.000      0.145 f
+  core_instance1/out[120] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.145 f
+  out_core1[120] (net)                                   0.009               0.000      0.145 f
+  out_core1[120] (out)                                             0.039     0.000      0.145 f
+  data arrival time                                                                     0.145
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_120_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[120]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_120_/CP (EDFQD1)          0.440     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_120_/Q (EDFQD1)           0.039     0.145      0.145 f
+  core_instance2/psum_mem_instance/Q[120] (net)     9    0.009               0.000      0.145 f
+  core_instance2/psum_mem_instance/Q[120] (sram_w16_sram_bit160_0)           0.000      0.145 f
+  core_instance2/out[120] (net)                          0.009               0.000      0.145 f
+  core_instance2/out[120] (core_col8_bw8_bw_psum20_pr16_0)                   0.000      0.145 f
+  out_core2[120] (net)                                   0.009               0.000      0.145 f
+  out_core2[120] (out)                                             0.039     0.000      0.145 f
+  data arrival time                                                                     0.145
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_80_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[80]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_80_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_80_/Q (EDFQD1)            0.038     0.145      0.145 f
+  core_instance1/psum_mem_instance/Q[80] (net)    10     0.009               0.000      0.145 f
+  core_instance1/psum_mem_instance/Q[80] (sram_w16_sram_bit160_1)            0.000      0.145 f
+  core_instance1/out[80] (net)                           0.009               0.000      0.145 f
+  core_instance1/out[80] (core_col8_bw8_bw_psum20_pr16_1)                    0.000      0.145 f
+  out_core1[80] (net)                                    0.009               0.000      0.145 f
+  out_core1[80] (out)                                              0.038     0.000      0.145 f
+  data arrival time                                                                     0.145
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_0_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[0]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_0_/CP (EDFQD1)            0.440     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_0_/Q (EDFQD1)             0.038     0.145      0.145 f
+  core_instance2/psum_mem_instance/Q[0] (net)     9      0.009               0.000      0.145 f
+  core_instance2/psum_mem_instance/Q[0] (sram_w16_sram_bit160_0)             0.000      0.145 f
+  core_instance2/out[0] (net)                            0.009               0.000      0.145 f
+  core_instance2/out[0] (core_col8_bw8_bw_psum20_pr16_0)                     0.000      0.145 f
+  out_core2[0] (net)                                     0.009               0.000      0.145 f
+  out_core2[0] (out)                                               0.038     0.000      0.145 f
+  data arrival time                                                                     0.145
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_121_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[121]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_121_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_121_/Q (EDFQD1)           0.037     0.145      0.145 f
+  core_instance1/psum_mem_instance/Q[121] (net)     8    0.009               0.000      0.145 f
+  core_instance1/psum_mem_instance/Q[121] (sram_w16_sram_bit160_1)           0.000      0.145 f
+  core_instance1/out[121] (net)                          0.009               0.000      0.145 f
+  core_instance1/out[121] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.145 f
+  out_core1[121] (net)                                   0.009               0.000      0.145 f
+  out_core1[121] (out)                                             0.037     0.000      0.145 f
+  data arrival time                                                                     0.145
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_41_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[41]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_41_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_41_/Q (EDFQD1)            0.037     0.145      0.145 f
+  core_instance1/psum_mem_instance/Q[41] (net)     8     0.009               0.000      0.145 f
+  core_instance1/psum_mem_instance/Q[41] (sram_w16_sram_bit160_1)            0.000      0.145 f
+  core_instance1/out[41] (net)                           0.009               0.000      0.145 f
+  core_instance1/out[41] (core_col8_bw8_bw_psum20_pr16_1)                    0.000      0.145 f
+  out_core1[41] (net)                                    0.009               0.000      0.145 f
+  out_core1[41] (out)                                              0.037     0.000      0.145 f
+  data arrival time                                                                     0.145
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_80_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[80]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_80_/CP (EDFQD1)           0.440     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_80_/Q (EDFQD1)            0.038     0.145      0.145 f
+  core_instance2/psum_mem_instance/Q[80] (net)    10     0.009               0.000      0.145 f
+  core_instance2/psum_mem_instance/Q[80] (sram_w16_sram_bit160_0)            0.000      0.145 f
+  core_instance2/out[80] (net)                           0.009               0.000      0.145 f
+  core_instance2/out[80] (core_col8_bw8_bw_psum20_pr16_0)                    0.000      0.145 f
+  out_core2[80] (net)                                    0.009               0.000      0.145 f
+  out_core2[80] (out)                                              0.038     0.000      0.145 f
+  data arrival time                                                                     0.145
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_21_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[21]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_21_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_21_/Q (EDFQD1)            0.036     0.144      0.144 f
+  core_instance1/psum_mem_instance/Q[21] (net)     8     0.008               0.000      0.144 f
+  core_instance1/psum_mem_instance/Q[21] (sram_w16_sram_bit160_1)            0.000      0.144 f
+  core_instance1/out[21] (net)                           0.008               0.000      0.144 f
+  core_instance1/out[21] (core_col8_bw8_bw_psum20_pr16_1)                    0.000      0.144 f
+  out_core1[21] (net)                                    0.008               0.000      0.144 f
+  out_core1[21] (out)                                              0.036     0.000      0.144 f
+  data arrival time                                                                     0.144
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_21_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[21]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_21_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_21_/Q (EDFQD1)            0.036     0.144      0.144 f
+  core_instance2/psum_mem_instance/Q[21] (net)     8     0.008               0.000      0.144 f
+  core_instance2/psum_mem_instance/Q[21] (sram_w16_sram_bit160_0)            0.000      0.144 f
+  core_instance2/out[21] (net)                           0.008               0.000      0.144 f
+  core_instance2/out[21] (core_col8_bw8_bw_psum20_pr16_0)                    0.000      0.144 f
+  out_core2[21] (net)                                    0.008               0.000      0.144 f
+  out_core2[21] (out)                                              0.036     0.000      0.144 f
+  data arrival time                                                                     0.144
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_41_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[41]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_41_/CP (EDFQD1)           0.440     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_41_/Q (EDFQD1)            0.037     0.144      0.144 f
+  core_instance2/psum_mem_instance/Q[41] (net)     8     0.009               0.000      0.144 f
+  core_instance2/psum_mem_instance/Q[41] (sram_w16_sram_bit160_0)            0.000      0.144 f
+  core_instance2/out[41] (net)                           0.009               0.000      0.144 f
+  core_instance2/out[41] (core_col8_bw8_bw_psum20_pr16_0)                    0.000      0.144 f
+  out_core2[41] (net)                                    0.009               0.000      0.144 f
+  out_core2[41] (out)                                              0.037     0.000      0.144 f
+  data arrival time                                                                     0.144
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_121_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[121]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_121_/CP (EDFQD1)          0.440     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_121_/Q (EDFQD1)           0.037     0.144      0.144 f
+  core_instance2/psum_mem_instance/Q[121] (net)     8    0.009               0.000      0.144 f
+  core_instance2/psum_mem_instance/Q[121] (sram_w16_sram_bit160_0)           0.000      0.144 f
+  core_instance2/out[121] (net)                          0.009               0.000      0.144 f
+  core_instance2/out[121] (core_col8_bw8_bw_psum20_pr16_0)                   0.000      0.144 f
+  out_core2[121] (net)                                   0.009               0.000      0.144 f
+  out_core2[121] (out)                                             0.037     0.000      0.144 f
+  data arrival time                                                                     0.144
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_122_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[122]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_122_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_122_/Q (EDFQD1)           0.036     0.144      0.144 f
+  core_instance1/psum_mem_instance/Q[122] (net)     7    0.008               0.000      0.144 f
+  core_instance1/psum_mem_instance/Q[122] (sram_w16_sram_bit160_1)           0.000      0.144 f
+  core_instance1/out[122] (net)                          0.008               0.000      0.144 f
+  core_instance1/out[122] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.144 f
+  out_core1[122] (net)                                   0.008               0.000      0.144 f
+  out_core1[122] (out)                                             0.036     0.000      0.144 f
+  data arrival time                                                                     0.144
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_100_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[100]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_100_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_100_/Q (EDFQD1)           0.036     0.144      0.144 f
+  core_instance1/psum_mem_instance/Q[100] (net)    10    0.008               0.000      0.144 f
+  core_instance1/psum_mem_instance/Q[100] (sram_w16_sram_bit160_1)           0.000      0.144 f
+  core_instance1/out[100] (net)                          0.008               0.000      0.144 f
+  core_instance1/out[100] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.144 f
+  out_core1[100] (net)                                   0.008               0.000      0.144 f
+  out_core1[100] (out)                                             0.036     0.000      0.144 f
+  data arrival time                                                                     0.144
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_100_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[100]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_100_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_100_/Q (EDFQD1)           0.036     0.144      0.144 f
+  core_instance2/psum_mem_instance/Q[100] (net)    10    0.008               0.000      0.144 f
+  core_instance2/psum_mem_instance/Q[100] (sram_w16_sram_bit160_0)           0.000      0.144 f
+  core_instance2/out[100] (net)                          0.008               0.000      0.144 f
+  core_instance2/out[100] (core_col8_bw8_bw_psum20_pr16_0)                   0.000      0.144 f
+  out_core2[100] (net)                                   0.008               0.000      0.144 f
+  out_core2[100] (out)                                             0.036     0.000      0.144 f
+  data arrival time                                                                     0.144
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_122_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[122]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_122_/CP (EDFQD1)          0.440     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_122_/Q (EDFQD1)           0.036     0.143      0.143 f
+  core_instance2/psum_mem_instance/Q[122] (net)     7    0.008               0.000      0.143 f
+  core_instance2/psum_mem_instance/Q[122] (sram_w16_sram_bit160_0)           0.000      0.143 f
+  core_instance2/out[122] (net)                          0.008               0.000      0.143 f
+  core_instance2/out[122] (core_col8_bw8_bw_psum20_pr16_0)                   0.000      0.143 f
+  out_core2[122] (net)                                   0.008               0.000      0.143 f
+  out_core2[122] (out)                                             0.036     0.000      0.143 f
+  data arrival time                                                                     0.143
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_141_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[141]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_141_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_141_/Q (EDFQD1)           0.035     0.143      0.143 f
+  core_instance1/psum_mem_instance/Q[141] (net)     8    0.008               0.000      0.143 f
+  core_instance1/psum_mem_instance/Q[141] (sram_w16_sram_bit160_1)           0.000      0.143 f
+  core_instance1/out[141] (net)                          0.008               0.000      0.143 f
+  core_instance1/out[141] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.143 f
+  out_core1[141] (net)                                   0.008               0.000      0.143 f
+  out_core1[141] (out)                                             0.035     0.000      0.143 f
+  data arrival time                                                                     0.143
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_42_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[42]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_42_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_42_/Q (EDFQD1)            0.035     0.143      0.143 f
+  core_instance1/psum_mem_instance/Q[42] (net)     7     0.008               0.000      0.143 f
+  core_instance1/psum_mem_instance/Q[42] (sram_w16_sram_bit160_1)            0.000      0.143 f
+  core_instance1/out[42] (net)                           0.008               0.000      0.143 f
+  core_instance1/out[42] (core_col8_bw8_bw_psum20_pr16_1)                    0.000      0.143 f
+  out_core1[42] (net)                                    0.008               0.000      0.143 f
+  out_core1[42] (out)                                              0.035     0.000      0.143 f
+  data arrival time                                                                     0.143
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_61_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[61]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_61_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_61_/Q (EDFQD1)            0.034     0.143      0.143 f
+  core_instance1/psum_mem_instance/Q[61] (net)     8     0.008               0.000      0.143 f
+  core_instance1/psum_mem_instance/Q[61] (sram_w16_sram_bit160_1)            0.000      0.143 f
+  core_instance1/out[61] (net)                           0.008               0.000      0.143 f
+  core_instance1/out[61] (core_col8_bw8_bw_psum20_pr16_1)                    0.000      0.143 f
+  out_core1[61] (net)                                    0.008               0.000      0.143 f
+  out_core1[61] (out)                                              0.034     0.000      0.143 f
+  data arrival time                                                                     0.143
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_1_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[1]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_1_/CP (EDFQD1)            0.449     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_1_/Q (EDFQD1)             0.034     0.143      0.143 f
+  core_instance2/psum_mem_instance/Q[1] (net)     8      0.008               0.000      0.143 f
+  core_instance2/psum_mem_instance/Q[1] (sram_w16_sram_bit160_0)             0.000      0.143 f
+  core_instance2/out[1] (net)                            0.008               0.000      0.143 f
+  core_instance2/out[1] (core_col8_bw8_bw_psum20_pr16_0)                     0.000      0.143 f
+  out_core2[1] (net)                                     0.008               0.000      0.143 f
+  out_core2[1] (out)                                               0.034     0.000      0.143 f
+  data arrival time                                                                     0.143
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_60_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[60]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_60_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_60_/Q (EDFQD1)            0.034     0.143      0.143 f
+  core_instance1/psum_mem_instance/Q[60] (net)    10     0.008               0.000      0.143 f
+  core_instance1/psum_mem_instance/Q[60] (sram_w16_sram_bit160_1)            0.000      0.143 f
+  core_instance1/out[60] (net)                           0.008               0.000      0.143 f
+  core_instance1/out[60] (core_col8_bw8_bw_psum20_pr16_1)                    0.000      0.143 f
+  out_core1[60] (net)                                    0.008               0.000      0.143 f
+  out_core1[60] (out)                                              0.034     0.000      0.143 f
+  data arrival time                                                                     0.143
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_22_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[22]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_22_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_22_/Q (EDFQD1)            0.034     0.143      0.143 f
+  core_instance1/psum_mem_instance/Q[22] (net)     7     0.008               0.000      0.143 f
+  core_instance1/psum_mem_instance/Q[22] (sram_w16_sram_bit160_1)            0.000      0.143 f
+  core_instance1/out[22] (net)                           0.008               0.000      0.143 f
+  core_instance1/out[22] (core_col8_bw8_bw_psum20_pr16_1)                    0.000      0.143 f
+  out_core1[22] (net)                                    0.008               0.000      0.143 f
+  out_core1[22] (out)                                              0.034     0.000      0.143 f
+  data arrival time                                                                     0.143
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_60_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[60]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_60_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_60_/Q (EDFQD1)            0.034     0.143      0.143 f
+  core_instance2/psum_mem_instance/Q[60] (net)    10     0.008               0.000      0.143 f
+  core_instance2/psum_mem_instance/Q[60] (sram_w16_sram_bit160_0)            0.000      0.143 f
+  core_instance2/out[60] (net)                           0.008               0.000      0.143 f
+  core_instance2/out[60] (core_col8_bw8_bw_psum20_pr16_0)                    0.000      0.143 f
+  out_core2[60] (net)                                    0.008               0.000      0.143 f
+  out_core2[60] (out)                                              0.034     0.000      0.143 f
+  data arrival time                                                                     0.143
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_22_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[22]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_22_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_22_/Q (EDFQD1)            0.034     0.143      0.143 f
+  core_instance2/psum_mem_instance/Q[22] (net)     7     0.008               0.000      0.143 f
+  core_instance2/psum_mem_instance/Q[22] (sram_w16_sram_bit160_0)            0.000      0.143 f
+  core_instance2/out[22] (net)                           0.008               0.000      0.143 f
+  core_instance2/out[22] (core_col8_bw8_bw_psum20_pr16_0)                    0.000      0.143 f
+  out_core2[22] (net)                                    0.008               0.000      0.143 f
+  out_core2[22] (out)                                              0.034     0.000      0.143 f
+  data arrival time                                                                     0.143
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_141_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[141]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_141_/CP (EDFQD1)          0.440     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_141_/Q (EDFQD1)           0.035     0.143      0.143 f
+  core_instance2/psum_mem_instance/Q[141] (net)     8    0.008               0.000      0.143 f
+  core_instance2/psum_mem_instance/Q[141] (sram_w16_sram_bit160_0)           0.000      0.143 f
+  core_instance2/out[141] (net)                          0.008               0.000      0.143 f
+  core_instance2/out[141] (core_col8_bw8_bw_psum20_pr16_0)                   0.000      0.143 f
+  out_core2[141] (net)                                   0.008               0.000      0.143 f
+  out_core2[141] (out)                                             0.035     0.000      0.143 f
+  data arrival time                                                                     0.143
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_42_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[42]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_42_/CP (EDFQD1)           0.440     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_42_/Q (EDFQD1)            0.035     0.143      0.143 f
+  core_instance2/psum_mem_instance/Q[42] (net)     7     0.008               0.000      0.143 f
+  core_instance2/psum_mem_instance/Q[42] (sram_w16_sram_bit160_0)            0.000      0.143 f
+  core_instance2/out[42] (net)                           0.008               0.000      0.143 f
+  core_instance2/out[42] (core_col8_bw8_bw_psum20_pr16_0)                    0.000      0.143 f
+  out_core2[42] (net)                                    0.008               0.000      0.143 f
+  out_core2[42] (out)                                              0.035     0.000      0.143 f
+  data arrival time                                                                     0.143
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_1_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[1]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_1_/CP (EDFQD1)            0.440     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_1_/Q (EDFQD1)             0.034     0.142      0.142 f
+  core_instance1/psum_mem_instance/Q[1] (net)     8      0.008               0.000      0.142 f
+  core_instance1/psum_mem_instance/Q[1] (sram_w16_sram_bit160_1)             0.000      0.142 f
+  core_instance1/out[1] (net)                            0.008               0.000      0.142 f
+  core_instance1/out[1] (core_col8_bw8_bw_psum20_pr16_1)                     0.000      0.142 f
+  out_core1[1] (net)                                     0.008               0.000      0.142 f
+  out_core1[1] (out)                                               0.034     0.000      0.142 f
+  data arrival time                                                                     0.142
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_61_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[61]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_61_/CP (EDFQD1)           0.440     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_61_/Q (EDFQD1)            0.034     0.142      0.142 f
+  core_instance2/psum_mem_instance/Q[61] (net)     8     0.008               0.000      0.142 f
+  core_instance2/psum_mem_instance/Q[61] (sram_w16_sram_bit160_0)            0.000      0.142 f
+  core_instance2/out[61] (net)                           0.008               0.000      0.142 f
+  core_instance2/out[61] (core_col8_bw8_bw_psum20_pr16_0)                    0.000      0.142 f
+  out_core2[61] (net)                                    0.008               0.000      0.142 f
+  out_core2[61] (out)                                              0.034     0.000      0.142 f
+  data arrival time                                                                     0.142
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_142_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[142]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_142_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_142_/Q (EDFQD1)           0.032     0.142      0.142 f
+  core_instance1/psum_mem_instance/Q[142] (net)     7    0.007               0.000      0.142 f
+  core_instance1/psum_mem_instance/Q[142] (sram_w16_sram_bit160_1)           0.000      0.142 f
+  core_instance1/out[142] (net)                          0.007               0.000      0.142 f
+  core_instance1/out[142] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.142 f
+  out_core1[142] (net)                                   0.007               0.000      0.142 f
+  out_core1[142] (out)                                             0.032     0.000      0.142 f
+  data arrival time                                                                     0.142
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_101_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[101]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_101_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_101_/Q (EDFQD1)           0.032     0.142      0.142 f
+  core_instance2/psum_mem_instance/Q[101] (net)     8    0.007               0.000      0.142 f
+  core_instance2/psum_mem_instance/Q[101] (sram_w16_sram_bit160_0)           0.000      0.142 f
+  core_instance2/out[101] (net)                          0.007               0.000      0.142 f
+  core_instance2/out[101] (core_col8_bw8_bw_psum20_pr16_0)                   0.000      0.142 f
+  out_core2[101] (net)                                   0.007               0.000      0.142 f
+  out_core2[101] (out)                                             0.032     0.000      0.142 f
+  data arrival time                                                                     0.142
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_101_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[101]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_101_/CP (EDFQD1)          0.440     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_101_/Q (EDFQD1)           0.032     0.141      0.141 f
+  core_instance1/psum_mem_instance/Q[101] (net)     8    0.007               0.000      0.141 f
+  core_instance1/psum_mem_instance/Q[101] (sram_w16_sram_bit160_1)           0.000      0.141 f
+  core_instance1/out[101] (net)                          0.007               0.000      0.141 f
+  core_instance1/out[101] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.141 f
+  out_core1[101] (net)                                   0.007               0.000      0.141 f
+  out_core1[101] (out)                                             0.032     0.000      0.141 f
+  data arrival time                                                                     0.141
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_2_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[2]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_2_/CP (EDFQD1)            0.440     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_2_/Q (EDFQD1)             0.032     0.141      0.141 f
+  core_instance1/psum_mem_instance/Q[2] (net)     7      0.007               0.000      0.141 f
+  core_instance1/psum_mem_instance/Q[2] (sram_w16_sram_bit160_1)             0.000      0.141 f
+  core_instance1/out[2] (net)                            0.007               0.000      0.141 f
+  core_instance1/out[2] (core_col8_bw8_bw_psum20_pr16_1)                     0.000      0.141 f
+  out_core1[2] (net)                                     0.007               0.000      0.141 f
+  out_core1[2] (out)                                               0.032     0.000      0.141 f
+  data arrival time                                                                     0.141
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_142_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[142]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_142_/CP (EDFQD1)          0.440     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_142_/Q (EDFQD1)           0.032     0.141      0.141 f
+  core_instance2/psum_mem_instance/Q[142] (net)     7    0.007               0.000      0.141 f
+  core_instance2/psum_mem_instance/Q[142] (sram_w16_sram_bit160_0)           0.000      0.141 f
+  core_instance2/out[142] (net)                          0.007               0.000      0.141 f
+  core_instance2/out[142] (core_col8_bw8_bw_psum20_pr16_0)                   0.000      0.141 f
+  out_core2[142] (net)                                   0.007               0.000      0.141 f
+  out_core2[142] (out)                                             0.032     0.000      0.141 f
+  data arrival time                                                                     0.141
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_2_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[2]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_2_/CP (EDFQD1)            0.440     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_2_/Q (EDFQD1)             0.032     0.141      0.141 f
+  core_instance2/psum_mem_instance/Q[2] (net)     7      0.007               0.000      0.141 f
+  core_instance2/psum_mem_instance/Q[2] (sram_w16_sram_bit160_0)             0.000      0.141 f
+  core_instance2/out[2] (net)                            0.007               0.000      0.141 f
+  core_instance2/out[2] (core_col8_bw8_bw_psum20_pr16_0)                     0.000      0.141 f
+  out_core2[2] (net)                                     0.007               0.000      0.141 f
+  out_core2[2] (out)                                               0.032     0.000      0.141 f
+  data arrival time                                                                     0.141
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_81_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[81]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_81_/CP (EDFQD1)           0.440     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_81_/Q (EDFQD1)            0.031     0.140      0.140 f
+  core_instance1/psum_mem_instance/Q[81] (net)     8     0.007               0.000      0.140 f
+  core_instance1/psum_mem_instance/Q[81] (sram_w16_sram_bit160_1)            0.000      0.140 f
+  core_instance1/out[81] (net)                           0.007               0.000      0.140 f
+  core_instance1/out[81] (core_col8_bw8_bw_psum20_pr16_1)                    0.000      0.140 f
+  out_core1[81] (net)                                    0.007               0.000      0.140 f
+  out_core1[81] (out)                                              0.031     0.000      0.140 f
+  data arrival time                                                                     0.140
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_81_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[81]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_81_/CP (EDFQD1)           0.440     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_81_/Q (EDFQD1)            0.031     0.140      0.140 f
+  core_instance2/psum_mem_instance/Q[81] (net)     8     0.007               0.000      0.140 f
+  core_instance2/psum_mem_instance/Q[81] (sram_w16_sram_bit160_0)            0.000      0.140 f
+  core_instance2/out[81] (net)                           0.007               0.000      0.140 f
+  core_instance2/out[81] (core_col8_bw8_bw_psum20_pr16_0)                    0.000      0.140 f
+  out_core2[81] (net)                                    0.007               0.000      0.140 f
+  out_core2[81] (out)                                              0.031     0.000      0.140 f
+  data arrival time                                                                     0.140
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_102_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[102]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_102_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_102_/Q (EDFQD1)           0.029     0.139      0.139 f
+  core_instance1/psum_mem_instance/Q[102] (net)     7    0.006               0.000      0.139 f
+  core_instance1/psum_mem_instance/Q[102] (sram_w16_sram_bit160_1)           0.000      0.139 f
+  core_instance1/out[102] (net)                          0.006               0.000      0.139 f
+  core_instance1/out[102] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.139 f
+  out_core1[102] (net)                                   0.006               0.000      0.139 f
+  out_core1[102] (out)                                             0.029     0.000      0.139 f
+  data arrival time                                                                     0.139
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_82_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[82]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_82_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_82_/Q (EDFQD1)            0.029     0.139      0.139 f
+  core_instance1/psum_mem_instance/Q[82] (net)     7     0.006               0.000      0.139 f
+  core_instance1/psum_mem_instance/Q[82] (sram_w16_sram_bit160_1)            0.000      0.139 f
+  core_instance1/out[82] (net)                           0.006               0.000      0.139 f
+  core_instance1/out[82] (core_col8_bw8_bw_psum20_pr16_1)                    0.000      0.139 f
+  out_core1[82] (net)                                    0.006               0.000      0.139 f
+  out_core1[82] (out)                                              0.029     0.000      0.139 f
+  data arrival time                                                                     0.139
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_102_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[102]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_102_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_102_/Q (EDFQD1)           0.029     0.139      0.139 f
+  core_instance2/psum_mem_instance/Q[102] (net)     7    0.006               0.000      0.139 f
+  core_instance2/psum_mem_instance/Q[102] (sram_w16_sram_bit160_0)           0.000      0.139 f
+  core_instance2/out[102] (net)                          0.006               0.000      0.139 f
+  core_instance2/out[102] (core_col8_bw8_bw_psum20_pr16_0)                   0.000      0.139 f
+  out_core2[102] (net)                                   0.006               0.000      0.139 f
+  out_core2[102] (out)                                             0.029     0.000      0.139 f
+  data arrival time                                                                     0.139
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_82_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[82]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_82_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_82_/Q (EDFQD1)            0.029     0.139      0.139 f
+  core_instance2/psum_mem_instance/Q[82] (net)     7     0.006               0.000      0.139 f
+  core_instance2/psum_mem_instance/Q[82] (sram_w16_sram_bit160_0)            0.000      0.139 f
+  core_instance2/out[82] (net)                           0.006               0.000      0.139 f
+  core_instance2/out[82] (core_col8_bw8_bw_psum20_pr16_0)                    0.000      0.139 f
+  out_core2[82] (net)                                    0.006               0.000      0.139 f
+  out_core2[82] (out)                                              0.029     0.000      0.139 f
+  data arrival time                                                                     0.139
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_158_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[158]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_158_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_158_/Q (EDFQD1)           0.028     0.139      0.139 f
+  core_instance1/psum_mem_instance/Q[158] (net)     6    0.006               0.000      0.139 f
+  core_instance1/psum_mem_instance/Q[158] (sram_w16_sram_bit160_1)           0.000      0.139 f
+  core_instance1/out[158] (net)                          0.006               0.000      0.139 f
+  core_instance1/out[158] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.139 f
+  out_core1[158] (net)                                   0.006               0.000      0.139 f
+  out_core1[158] (out)                                             0.028     0.000      0.139 f
+  data arrival time                                                                     0.139
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_143_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[143]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_143_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_143_/Q (EDFQD1)           0.028     0.139      0.139 f
+  core_instance1/psum_mem_instance/Q[143] (net)     6    0.006               0.000      0.139 f
+  core_instance1/psum_mem_instance/Q[143] (sram_w16_sram_bit160_1)           0.000      0.139 f
+  core_instance1/out[143] (net)                          0.006               0.000      0.139 f
+  core_instance1/out[143] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.139 f
+  out_core1[143] (net)                                   0.006               0.000      0.139 f
+  out_core1[143] (out)                                             0.028     0.000      0.139 f
+  data arrival time                                                                     0.139
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_138_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[138]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_138_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_138_/Q (EDFQD1)           0.028     0.139      0.139 f
+  core_instance1/psum_mem_instance/Q[138] (net)     6    0.006               0.000      0.139 f
+  core_instance1/psum_mem_instance/Q[138] (sram_w16_sram_bit160_1)           0.000      0.139 f
+  core_instance1/out[138] (net)                          0.006               0.000      0.139 f
+  core_instance1/out[138] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.139 f
+  out_core1[138] (net)                                   0.006               0.000      0.139 f
+  out_core1[138] (out)                                             0.028     0.000      0.139 f
+  data arrival time                                                                     0.139
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_62_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[62]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_62_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_62_/Q (EDFQD1)            0.028     0.139      0.139 f
+  core_instance1/psum_mem_instance/Q[62] (net)     7     0.006               0.000      0.139 f
+  core_instance1/psum_mem_instance/Q[62] (sram_w16_sram_bit160_1)            0.000      0.139 f
+  core_instance1/out[62] (net)                           0.006               0.000      0.139 f
+  core_instance1/out[62] (core_col8_bw8_bw_psum20_pr16_1)                    0.000      0.139 f
+  out_core1[62] (net)                                    0.006               0.000      0.139 f
+  out_core1[62] (out)                                              0.028     0.000      0.139 f
+  data arrival time                                                                     0.139
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_23_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[23]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_23_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_23_/Q (EDFQD1)            0.028     0.139      0.139 f
+  core_instance1/psum_mem_instance/Q[23] (net)     6     0.006               0.000      0.139 f
+  core_instance1/psum_mem_instance/Q[23] (sram_w16_sram_bit160_1)            0.000      0.139 f
+  core_instance1/out[23] (net)                           0.006               0.000      0.139 f
+  core_instance1/out[23] (core_col8_bw8_bw_psum20_pr16_1)                    0.000      0.139 f
+  out_core1[23] (net)                                    0.006               0.000      0.139 f
+  out_core1[23] (out)                                              0.028     0.000      0.139 f
+  data arrival time                                                                     0.139
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_158_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[158]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_158_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_158_/Q (EDFQD1)           0.028     0.139      0.139 f
+  core_instance2/psum_mem_instance/Q[158] (net)     6    0.006               0.000      0.139 f
+  core_instance2/psum_mem_instance/Q[158] (sram_w16_sram_bit160_0)           0.000      0.139 f
+  core_instance2/out[158] (net)                          0.006               0.000      0.139 f
+  core_instance2/out[158] (core_col8_bw8_bw_psum20_pr16_0)                   0.000      0.139 f
+  out_core2[158] (net)                                   0.006               0.000      0.139 f
+  out_core2[158] (out)                                             0.028     0.000      0.139 f
+  data arrival time                                                                     0.139
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_138_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[138]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_138_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_138_/Q (EDFQD1)           0.028     0.139      0.139 f
+  core_instance2/psum_mem_instance/Q[138] (net)     6    0.006               0.000      0.139 f
+  core_instance2/psum_mem_instance/Q[138] (sram_w16_sram_bit160_0)           0.000      0.139 f
+  core_instance2/out[138] (net)                          0.006               0.000      0.139 f
+  core_instance2/out[138] (core_col8_bw8_bw_psum20_pr16_0)                   0.000      0.139 f
+  out_core2[138] (net)                                   0.006               0.000      0.139 f
+  out_core2[138] (out)                                             0.028     0.000      0.139 f
+  data arrival time                                                                     0.139
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_23_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[23]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_23_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_23_/Q (EDFQD1)            0.028     0.139      0.139 f
+  core_instance2/psum_mem_instance/Q[23] (net)     6     0.006               0.000      0.139 f
+  core_instance2/psum_mem_instance/Q[23] (sram_w16_sram_bit160_0)            0.000      0.139 f
+  core_instance2/out[23] (net)                           0.006               0.000      0.139 f
+  core_instance2/out[23] (core_col8_bw8_bw_psum20_pr16_0)                    0.000      0.139 f
+  out_core2[23] (net)                                    0.006               0.000      0.139 f
+  out_core2[23] (out)                                              0.028     0.000      0.139 f
+  data arrival time                                                                     0.139
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_103_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[103]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_103_/CP (EDFQD1)          0.440     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_103_/Q (EDFQD1)           0.029     0.139      0.139 f
+  core_instance1/psum_mem_instance/Q[103] (net)     6    0.006               0.000      0.139 f
+  core_instance1/psum_mem_instance/Q[103] (sram_w16_sram_bit160_1)           0.000      0.139 f
+  core_instance1/out[103] (net)                          0.006               0.000      0.139 f
+  core_instance1/out[103] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.139 f
+  out_core1[103] (net)                                   0.006               0.000      0.139 f
+  out_core1[103] (out)                                             0.029     0.000      0.139 f
+  data arrival time                                                                     0.139
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_103_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[103]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_103_/CP (EDFQD1)          0.440     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_103_/Q (EDFQD1)           0.029     0.139      0.139 f
+  core_instance2/psum_mem_instance/Q[103] (net)     6    0.006               0.000      0.139 f
+  core_instance2/psum_mem_instance/Q[103] (sram_w16_sram_bit160_0)           0.000      0.139 f
+  core_instance2/out[103] (net)                          0.006               0.000      0.139 f
+  core_instance2/out[103] (core_col8_bw8_bw_psum20_pr16_0)                   0.000      0.139 f
+  out_core2[103] (net)                                   0.006               0.000      0.139 f
+  out_core2[103] (out)                                             0.029     0.000      0.139 f
+  data arrival time                                                                     0.139
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_18_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[18]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_18_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_18_/Q (EDFQD1)            0.028     0.139      0.139 f
+  core_instance1/psum_mem_instance/Q[18] (net)     6     0.006               0.000      0.139 f
+  core_instance1/psum_mem_instance/Q[18] (sram_w16_sram_bit160_1)            0.000      0.139 f
+  core_instance1/out[18] (net)                           0.006               0.000      0.139 f
+  core_instance1/out[18] (core_col8_bw8_bw_psum20_pr16_1)                    0.000      0.139 f
+  out_core1[18] (net)                                    0.006               0.000      0.139 f
+  out_core1[18] (out)                                              0.028     0.000      0.139 f
+  data arrival time                                                                     0.139
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_3_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[3]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_3_/CP (EDFQD1)            0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_3_/Q (EDFQD1)             0.028     0.139      0.139 f
+  core_instance1/psum_mem_instance/Q[3] (net)     6      0.006               0.000      0.139 f
+  core_instance1/psum_mem_instance/Q[3] (sram_w16_sram_bit160_1)             0.000      0.139 f
+  core_instance1/out[3] (net)                            0.006               0.000      0.139 f
+  core_instance1/out[3] (core_col8_bw8_bw_psum20_pr16_1)                     0.000      0.139 f
+  out_core1[3] (net)                                     0.006               0.000      0.139 f
+  out_core1[3] (out)                                               0.028     0.000      0.139 f
+  data arrival time                                                                     0.139
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_18_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[18]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_18_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_18_/Q (EDFQD1)            0.028     0.139      0.139 f
+  core_instance2/psum_mem_instance/Q[18] (net)     6     0.006               0.000      0.139 f
+  core_instance2/psum_mem_instance/Q[18] (sram_w16_sram_bit160_0)            0.000      0.139 f
+  core_instance2/out[18] (net)                           0.006               0.000      0.139 f
+  core_instance2/out[18] (core_col8_bw8_bw_psum20_pr16_0)                    0.000      0.139 f
+  out_core2[18] (net)                                    0.006               0.000      0.139 f
+  out_core2[18] (out)                                              0.028     0.000      0.139 f
+  data arrival time                                                                     0.139
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_143_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[143]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_143_/CP (EDFQD1)          0.440     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_143_/Q (EDFQD1)           0.028     0.138      0.138 f
+  core_instance2/psum_mem_instance/Q[143] (net)     6    0.006               0.000      0.138 f
+  core_instance2/psum_mem_instance/Q[143] (sram_w16_sram_bit160_0)           0.000      0.138 f
+  core_instance2/out[143] (net)                          0.006               0.000      0.138 f
+  core_instance2/out[143] (core_col8_bw8_bw_psum20_pr16_0)                   0.000      0.138 f
+  out_core2[143] (net)                                   0.006               0.000      0.138 f
+  out_core2[143] (out)                                             0.028     0.000      0.138 f
+  data arrival time                                                                     0.138
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_62_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[62]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_62_/CP (EDFQD1)           0.440     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_62_/Q (EDFQD1)            0.028     0.138      0.138 f
+  core_instance2/psum_mem_instance/Q[62] (net)     7     0.006               0.000      0.138 f
+  core_instance2/psum_mem_instance/Q[62] (sram_w16_sram_bit160_0)            0.000      0.138 f
+  core_instance2/out[62] (net)                           0.006               0.000      0.138 f
+  core_instance2/out[62] (core_col8_bw8_bw_psum20_pr16_0)                    0.000      0.138 f
+  out_core2[62] (net)                                    0.006               0.000      0.138 f
+  out_core2[62] (out)                                              0.028     0.000      0.138 f
+  data arrival time                                                                     0.138
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_3_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[3]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_3_/CP (EDFQD1)            0.440     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_3_/Q (EDFQD1)             0.028     0.138      0.138 f
+  core_instance2/psum_mem_instance/Q[3] (net)     6      0.006               0.000      0.138 f
+  core_instance2/psum_mem_instance/Q[3] (sram_w16_sram_bit160_0)             0.000      0.138 f
+  core_instance2/out[3] (net)                            0.006               0.000      0.138 f
+  core_instance2/out[3] (core_col8_bw8_bw_psum20_pr16_0)                     0.000      0.138 f
+  out_core2[3] (net)                                     0.006               0.000      0.138 f
+  out_core2[3] (out)                                               0.028     0.000      0.138 f
+  data arrival time                                                                     0.138
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_63_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[63]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_63_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_63_/Q (EDFQD1)            0.027     0.138      0.138 f
+  core_instance1/psum_mem_instance/Q[63] (net)     6     0.005               0.000      0.138 f
+  core_instance1/psum_mem_instance/Q[63] (sram_w16_sram_bit160_1)            0.000      0.138 f
+  core_instance1/out[63] (net)                           0.005               0.000      0.138 f
+  core_instance1/out[63] (core_col8_bw8_bw_psum20_pr16_1)                    0.000      0.138 f
+  out_core1[63] (net)                                    0.005               0.000      0.138 f
+  out_core1[63] (out)                                              0.027     0.000      0.138 f
+  data arrival time                                                                     0.138
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_58_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[58]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_58_/CP (EDFQD1)           0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_58_/Q (EDFQD1)            0.026     0.138      0.138 f
+  core_instance1/psum_mem_instance/Q[58] (net)     6     0.005               0.000      0.138 f
+  core_instance1/psum_mem_instance/Q[58] (sram_w16_sram_bit160_1)            0.000      0.138 f
+  core_instance1/out[58] (net)                           0.005               0.000      0.138 f
+  core_instance1/out[58] (core_col8_bw8_bw_psum20_pr16_1)                    0.000      0.138 f
+  out_core1[58] (net)                                    0.005               0.000      0.138 f
+  out_core1[58] (out)                                              0.026     0.000      0.138 f
+  data arrival time                                                                     0.138
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_63_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[63]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_63_/CP (EDFQD1)           0.440     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_63_/Q (EDFQD1)            0.027     0.137      0.137 f
+  core_instance2/psum_mem_instance/Q[63] (net)     6     0.005               0.000      0.137 f
+  core_instance2/psum_mem_instance/Q[63] (sram_w16_sram_bit160_0)            0.000      0.137 f
+  core_instance2/out[63] (net)                           0.005               0.000      0.137 f
+  core_instance2/out[63] (core_col8_bw8_bw_psum20_pr16_0)                    0.000      0.137 f
+  out_core2[63] (net)                                    0.005               0.000      0.137 f
+  out_core2[63] (out)                                              0.027     0.000      0.137 f
+  data arrival time                                                                     0.137
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_123_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[123]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_123_/CP (EDFQD1)          0.440     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_123_/Q (EDFQD1)           0.026     0.137      0.137 f
+  core_instance1/psum_mem_instance/Q[123] (net)     6    0.005               0.000      0.137 f
+  core_instance1/psum_mem_instance/Q[123] (sram_w16_sram_bit160_1)           0.000      0.137 f
+  core_instance1/out[123] (net)                          0.005               0.000      0.137 f
+  core_instance1/out[123] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.137 f
+  out_core1[123] (net)                                   0.005               0.000      0.137 f
+  out_core1[123] (out)                                             0.026     0.000      0.137 f
+  data arrival time                                                                     0.137
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_43_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[43]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_43_/CP (EDFQD1)           0.440     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_43_/Q (EDFQD1)            0.026     0.137      0.137 f
+  core_instance1/psum_mem_instance/Q[43] (net)     6     0.005               0.000      0.137 f
+  core_instance1/psum_mem_instance/Q[43] (sram_w16_sram_bit160_1)            0.000      0.137 f
+  core_instance1/out[43] (net)                           0.005               0.000      0.137 f
+  core_instance1/out[43] (core_col8_bw8_bw_psum20_pr16_1)                    0.000      0.137 f
+  out_core1[43] (net)                                    0.005               0.000      0.137 f
+  out_core1[43] (out)                                              0.026     0.000      0.137 f
+  data arrival time                                                                     0.137
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_58_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[58]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_58_/CP (EDFQD1)           0.440     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_58_/Q (EDFQD1)            0.026     0.137      0.137 f
+  core_instance2/psum_mem_instance/Q[58] (net)     6     0.005               0.000      0.137 f
+  core_instance2/psum_mem_instance/Q[58] (sram_w16_sram_bit160_0)            0.000      0.137 f
+  core_instance2/out[58] (net)                           0.005               0.000      0.137 f
+  core_instance2/out[58] (core_col8_bw8_bw_psum20_pr16_0)                    0.000      0.137 f
+  out_core2[58] (net)                                    0.005               0.000      0.137 f
+  out_core2[58] (out)                                              0.026     0.000      0.137 f
+  data arrival time                                                                     0.137
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_123_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[123]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_123_/CP (EDFQD1)          0.440     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_123_/Q (EDFQD1)           0.026     0.137      0.137 f
+  core_instance2/psum_mem_instance/Q[123] (net)     6    0.005               0.000      0.137 f
+  core_instance2/psum_mem_instance/Q[123] (sram_w16_sram_bit160_0)           0.000      0.137 f
+  core_instance2/out[123] (net)                          0.005               0.000      0.137 f
+  core_instance2/out[123] (core_col8_bw8_bw_psum20_pr16_0)                   0.000      0.137 f
+  out_core2[123] (net)                                   0.005               0.000      0.137 f
+  out_core2[123] (out)                                             0.026     0.000      0.137 f
+  data arrival time                                                                     0.137
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_43_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[43]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_43_/CP (EDFQD1)           0.440     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_43_/Q (EDFQD1)            0.026     0.137      0.137 f
+  core_instance2/psum_mem_instance/Q[43] (net)     6     0.005               0.000      0.137 f
+  core_instance2/psum_mem_instance/Q[43] (sram_w16_sram_bit160_0)            0.000      0.137 f
+  core_instance2/out[43] (net)                           0.005               0.000      0.137 f
+  core_instance2/out[43] (core_col8_bw8_bw_psum20_pr16_0)                    0.000      0.137 f
+  out_core2[43] (net)                                    0.005               0.000      0.137 f
+  out_core2[43] (out)                                              0.026     0.000      0.137 f
+  data arrival time                                                                     0.137
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_155_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[155]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_155_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_155_/Q (EDFQD1)           0.025     0.137      0.137 f
+  core_instance1/psum_mem_instance/Q[155] (net)     5    0.005               0.000      0.137 f
+  core_instance1/psum_mem_instance/Q[155] (sram_w16_sram_bit160_1)           0.000      0.137 f
+  core_instance1/out[155] (net)                          0.005               0.000      0.137 f
+  core_instance1/out[155] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.137 f
+  out_core1[155] (net)                                   0.005               0.000      0.137 f
+  out_core1[155] (out)                                             0.025     0.000      0.137 f
+  data arrival time                                                                     0.137
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_153_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[153]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_153_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_153_/Q (EDFQD1)           0.025     0.137      0.137 f
+  core_instance1/psum_mem_instance/Q[153] (net)     5    0.005               0.000      0.137 f
+  core_instance1/psum_mem_instance/Q[153] (sram_w16_sram_bit160_1)           0.000      0.137 f
+  core_instance1/out[153] (net)                          0.005               0.000      0.137 f
+  core_instance1/out[153] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.137 f
+  out_core1[153] (net)                                   0.005               0.000      0.137 f
+  out_core1[153] (out)                                             0.025     0.000      0.137 f
+  data arrival time                                                                     0.137
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_149_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[149]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_149_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_149_/Q (EDFQD1)           0.025     0.137      0.137 f
+  core_instance1/psum_mem_instance/Q[149] (net)     5    0.005               0.000      0.137 f
+  core_instance1/psum_mem_instance/Q[149] (sram_w16_sram_bit160_1)           0.000      0.137 f
+  core_instance1/out[149] (net)                          0.005               0.000      0.137 f
+  core_instance1/out[149] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.137 f
+  out_core1[149] (net)                                   0.005               0.000      0.137 f
+  out_core1[149] (out)                                             0.025     0.000      0.137 f
+  data arrival time                                                                     0.137
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_137_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[137]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_137_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_137_/Q (EDFQD1)           0.025     0.137      0.137 f
+  core_instance1/psum_mem_instance/Q[137] (net)     5    0.005               0.000      0.137 f
+  core_instance1/psum_mem_instance/Q[137] (sram_w16_sram_bit160_1)           0.000      0.137 f
+  core_instance1/out[137] (net)                          0.005               0.000      0.137 f
+  core_instance1/out[137] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.137 f
+  out_core1[137] (net)                                   0.005               0.000      0.137 f
+  out_core1[137] (out)                                             0.025     0.000      0.137 f
+  data arrival time                                                                     0.137
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_135_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[135]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_135_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_135_/Q (EDFQD1)           0.025     0.137      0.137 f
+  core_instance1/psum_mem_instance/Q[135] (net)     5    0.005               0.000      0.137 f
+  core_instance1/psum_mem_instance/Q[135] (sram_w16_sram_bit160_1)           0.000      0.137 f
+  core_instance1/out[135] (net)                          0.005               0.000      0.137 f
+  core_instance1/out[135] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.137 f
+  out_core1[135] (net)                                   0.005               0.000      0.137 f
+  out_core1[135] (out)                                             0.025     0.000      0.137 f
+  data arrival time                                                                     0.137
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_133_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[133]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_133_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_133_/Q (EDFQD1)           0.025     0.137      0.137 f
+  core_instance1/psum_mem_instance/Q[133] (net)     5    0.005               0.000      0.137 f
+  core_instance1/psum_mem_instance/Q[133] (sram_w16_sram_bit160_1)           0.000      0.137 f
+  core_instance1/out[133] (net)                          0.005               0.000      0.137 f
+  core_instance1/out[133] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.137 f
+  out_core1[133] (net)                                   0.005               0.000      0.137 f
+  out_core1[133] (out)                                             0.025     0.000      0.137 f
+  data arrival time                                                                     0.137
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_131_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[131]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_131_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_131_/Q (EDFQD1)           0.025     0.137      0.137 f
+  core_instance1/psum_mem_instance/Q[131] (net)     5    0.005               0.000      0.137 f
+  core_instance1/psum_mem_instance/Q[131] (sram_w16_sram_bit160_1)           0.000      0.137 f
+  core_instance1/out[131] (net)                          0.005               0.000      0.137 f
+  core_instance1/out[131] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.137 f
+  out_core1[131] (net)                                   0.005               0.000      0.137 f
+  out_core1[131] (out)                                             0.025     0.000      0.137 f
+  data arrival time                                                                     0.137
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_129_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[129]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_129_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_129_/Q (EDFQD1)           0.025     0.137      0.137 f
+  core_instance1/psum_mem_instance/Q[129] (net)     5    0.005               0.000      0.137 f
+  core_instance1/psum_mem_instance/Q[129] (sram_w16_sram_bit160_1)           0.000      0.137 f
+  core_instance1/out[129] (net)                          0.005               0.000      0.137 f
+  core_instance1/out[129] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.137 f
+  out_core1[129] (net)                                   0.005               0.000      0.137 f
+  out_core1[129] (out)                                             0.025     0.000      0.137 f
+  data arrival time                                                                     0.137
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/psum_mem_instance/Q_reg_127_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core1[127]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_1 ZeroWireload      tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_1 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_1 ZeroWireload tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance1/psum_mem_instance/Q_reg_127_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance1/psum_mem_instance/Q_reg_127_/Q (EDFQD1)           0.025     0.137      0.137 f
+  core_instance1/psum_mem_instance/Q[127] (net)     5    0.005               0.000      0.137 f
+  core_instance1/psum_mem_instance/Q[127] (sram_w16_sram_bit160_1)           0.000      0.137 f
+  core_instance1/out[127] (net)                          0.005               0.000      0.137 f
+  core_instance1/out[127] (core_col8_bw8_bw_psum20_pr16_1)                   0.000      0.137 f
+  out_core1[127] (net)                                   0.005               0.000      0.137 f
+  out_core1[127] (out)                                             0.025     0.000      0.137 f
+  data arrival time                                                                     0.137
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_155_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[155]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_155_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_155_/Q (EDFQD1)           0.025     0.137      0.137 f
+  core_instance2/psum_mem_instance/Q[155] (net)     5    0.005               0.000      0.137 f
+  core_instance2/psum_mem_instance/Q[155] (sram_w16_sram_bit160_0)           0.000      0.137 f
+  core_instance2/out[155] (net)                          0.005               0.000      0.137 f
+  core_instance2/out[155] (core_col8_bw8_bw_psum20_pr16_0)                   0.000      0.137 f
+  out_core2[155] (net)                                   0.005               0.000      0.137 f
+  out_core2[155] (out)                                             0.025     0.000      0.137 f
+  data arrival time                                                                     0.137
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_149_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[149]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_149_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_149_/Q (EDFQD1)           0.025     0.137      0.137 f
+  core_instance2/psum_mem_instance/Q[149] (net)     5    0.005               0.000      0.137 f
+  core_instance2/psum_mem_instance/Q[149] (sram_w16_sram_bit160_0)           0.000      0.137 f
+  core_instance2/out[149] (net)                          0.005               0.000      0.137 f
+  core_instance2/out[149] (core_col8_bw8_bw_psum20_pr16_0)                   0.000      0.137 f
+  out_core2[149] (net)                                   0.005               0.000      0.137 f
+  out_core2[149] (out)                                             0.025     0.000      0.137 f
+  data arrival time                                                                     0.137
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_137_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[137]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_137_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_137_/Q (EDFQD1)           0.025     0.137      0.137 f
+  core_instance2/psum_mem_instance/Q[137] (net)     5    0.005               0.000      0.137 f
+  core_instance2/psum_mem_instance/Q[137] (sram_w16_sram_bit160_0)           0.000      0.137 f
+  core_instance2/out[137] (net)                          0.005               0.000      0.137 f
+  core_instance2/out[137] (core_col8_bw8_bw_psum20_pr16_0)                   0.000      0.137 f
+  out_core2[137] (net)                                   0.005               0.000      0.137 f
+  out_core2[137] (out)                                             0.025     0.000      0.137 f
+  data arrival time                                                                     0.137
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_133_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[133]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_133_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_133_/Q (EDFQD1)           0.025     0.137      0.137 f
+  core_instance2/psum_mem_instance/Q[133] (net)     5    0.005               0.000      0.137 f
+  core_instance2/psum_mem_instance/Q[133] (sram_w16_sram_bit160_0)           0.000      0.137 f
+  core_instance2/out[133] (net)                          0.005               0.000      0.137 f
+  core_instance2/out[133] (core_col8_bw8_bw_psum20_pr16_0)                   0.000      0.137 f
+  out_core2[133] (net)                                   0.005               0.000      0.137 f
+  out_core2[133] (out)                                             0.025     0.000      0.137 f
+  data arrival time                                                                     0.137
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance2/psum_mem_instance/Q_reg_131_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_core2[131]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram_w16_sram_bit160_0 ZeroWireload      tcbn65gplustc
+  fullchip           ZeroWireload          tcbn65gplustc
+  sfp_row_col8_bw8_bw_psum20_0 ZeroWireload tcbn65gplustc
+  core_col8_bw8_bw_psum20_pr16_0 ZeroWireload tcbn65gplustc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance2/psum_mem_instance/Q_reg_131_/CP (EDFQD1)          0.449     0.000      0.000 r
+  core_instance2/psum_mem_instance/Q_reg_131_/Q (EDFQD1)           0.025     0.137      0.137 f
+  core_instance2/psum_mem_instance/Q[131] (net)     5    0.005               0.000      0.137 f
+  core_instance2/psum_mem_instance/Q[131] (sram_w16_sram_bit160_0)           0.000      0.137 f
+  core_instance2/out[131] (net)                          0.005               0.000      0.137 f
+  core_instance2/out[131] (core_col8_bw8_bw_psum20_pr16_0)                   0.000      0.137 f
+  out_core2[131] (net)                                   0.005               0.000      0.137 f
+  out_core2[131] (out)                                             0.025     0.000      0.137 f
+  data arrival time                                                                     0.137
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
