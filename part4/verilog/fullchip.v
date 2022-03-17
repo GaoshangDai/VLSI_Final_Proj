@@ -41,13 +41,12 @@ core #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) core_instance1 (
       .start(start_core1),
       .out(out_core1),
       .sum_in(sum_core1),
-	.sum_out(sum_out_core1),
-	.fifo_ext_rd(fifo_ext_rd_core1),
-	.fifo_in_ready(ready_core1),
-	.div_o(div_core1)
+      .sum_out(sum_out_core1),
+      .fifo_ext_rd(fifo_ext_rd_core1),
+      .fifo_in_ready(ready_core1),
+      .div_o(div_core1),
       .reset(reset),
-      .fifo_ext_rd_clk(clk_core2),
-
+      .fifo_ext_rd_clk(clk_core2)
 );
 
 core #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) core_instance2 (
@@ -56,12 +55,12 @@ core #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) core_instance2 (
       .start(start_core2),
       .out(out_core2),
       .sum_in(sum_core2),
-	.sum_out(sum_out_core2),
-	.fifo_ext_rd(fifo_ext_rd_core2),
-	.fifo_in_ready(ready_core2),
-	.div_o(div_core2)
+      .sum_out(sum_out_core2),
+      .fifo_ext_rd(fifo_ext_rd_core2),
+      .fifo_in_ready(ready_core2),
+      .div_o(div_core2),
       .reset(reset),
-      .fifo_ext_rd_clk(clk_core1),
+      .fifo_ext_rd_clk(clk_core1)
 );
 
 

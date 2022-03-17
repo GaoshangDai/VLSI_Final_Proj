@@ -141,13 +141,13 @@ sfp_row #(.bw(bw), .bw_psum(bw_psum), .col(col)) sfp_row_instance (
 	.sfp_out(sfp_out),
 	.fifo_ext_rd(fifo_ext_rd),
         .fifo_ext_rd_clk(fifo_ext_rd_clk),
-	.reset(reset)
-        .norm_wr(norm_wr)
+	.reset(reset),
+        .norm_wr(norm_wr),
         .div_q(div_q)
 );
 
 
-always @ (negedge clk) begin
+  always @ (negedge clk) begin
     if (reset) begin
       div <= 0;
       acc <= 0;
@@ -186,7 +186,9 @@ always @ (negedge clk) begin
 	      if (cnt > 0) begin 
                 qkmem_add <= qkmem_add + 1;
 	      end
-	      if (cnt == 0) qmem_wr <= 1;
+	      if (cnt == 0) begin
+                qmem_wr <= 1;
+              end
 	      cnt <= cnt + 1;
             end
     K_WR:
@@ -198,7 +200,9 @@ always @ (negedge clk) begin
 	    end
 	    else begin
 	      cnt <= cnt + 1;
-	      if (cnt == 0) kmem_wr <= 1;
+	      if (cnt == 0) begin
+                kmem_wr <= 1;
+              end
 	      else begin
 	        qkmem_add <= qkmem_add + 1;
 	      end
@@ -216,9 +220,15 @@ always @ (negedge clk) begin
 	    end
 	    else begin
 	      cnt <= cnt + 1;
-	      if (cnt == 0) load <= 1;
-	      else if (cnt == 1) kmem_rd <= 1;
-	      else qkmem_add <= qkmem_add + 1;
+	      if (cnt == 0) begin 
+                load <= 1;
+              end
+	      else if (cnt == 1) begin
+                kmem_rd <= 1;
+              end
+	      else begin
+                qkmem_add <= qkmem_add + 1;
+              end
 	    end
 
     LOAD:
@@ -234,7 +244,9 @@ always @ (negedge clk) begin
 		cnt <= 0;
 	      end
 	    end
-	    else cnt <= cnt + 1;
+	    else begin
+              cnt <= cnt + 1;
+            end
     EXECUTE:
 	    if (cnt == total_cycle) begin
 	      qmem_rd <= 0;
@@ -249,7 +261,9 @@ always @ (negedge clk) begin
 	        execute <= 1;
 		qmem_rd <= 1;
 	      end
-	      else qkmem_add <= qkmem_add + 1;
+	      else begin
+                qkmem_add <= qkmem_add + 1;
+              end
 	    end
     WR_TO_MEM:
 	    if (cnt == total_cycle) begin
@@ -272,7 +286,9 @@ always @ (negedge clk) begin
 		ofifo_rd <= 1;
 		pmem_wr <= 1;
               end
-	      else pmem_add <= pmem_add + 1;
+	      else begin 
+                pmem_add <= pmem_add + 1;
+              end
 	    end
     FETCH:
 	    if (cnt == total_cycle + 1) begin
@@ -287,10 +303,14 @@ always @ (negedge clk) begin
 	        pmem_add <= 0;
 	      end
 	      else begin
-	        if (cnt == 0) pmem_rd <= 1;
+	        if (cnt == 0) begin 
+                  pmem_rd <= 1;
+                end
 		else begin
 	          pmem_add <= pmem_add + 1;
-		  if (cnt == 1) acc <= 1;
+		  if (cnt == 1) begin
+                    acc <= 1;
+                  end
 		end
 	      end
             end
@@ -302,10 +322,14 @@ always @ (negedge clk) begin
             end
 	    else begin
 	      cnt <= cnt + 1;
-	      if (cnt == 0) fifo_ext_rd <= 1;
+	      if (cnt == 0) begin
+                fifo_ext_rd <= 1;
+              end
 	    end
     WAIT:
-	    if (fifo_in_ready) state <= NORM;
+	    if (fifo_in_ready) begin
+              state <= NORM;
+            end
     NORM:
 	    if (cnt == total_cycle) begin
 	      div <= 0;
@@ -321,10 +345,11 @@ always @ (negedge clk) begin
               end
 	    end
     endcase
+    end
   end
 
   //////////// For printing purpose ////////////
-  always @(posedge clk) begin
+  always @ (posedge clk) begin
       if(pmem_wr)
          $display("Memory write to PSUM mem add %x %x ", pmem_add, pmem_in); 
   end
