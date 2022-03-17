@@ -1,6 +1,6 @@
 // Created by prof. Mingu Kang @VVIP Lab in UCSD ECE department
 // Please do not spread this code without permission 
-module core (clk,start,  mem_in, out, reset, fifo_ext_rd_clk, fifo_ext_rd, sum_in, sum_out,fifo_in_ready,div_o);
+module core (clk,start, mem_in, out, reset, fifo_ext_rd, sum_in, sum_out,fifo_in_ready,div_o);
 
 parameter col = 8;
 parameter bw = 8;
@@ -13,7 +13,7 @@ wire [bw_psum+3:0] sum_out_temp2;
 output [bw_psum*col-1:0] out;
 wire   [bw_psum*col-1:0] pmem_out;
 input  [pr*bw-1:0] mem_in;
-input  clk,start, fifo_ext_rd_clk,  wr_norm;
+input  clk,start, wr_norm;
 // input  [16:0] inst; 
 wire [19:0] inst;
 reg div;
@@ -26,6 +26,7 @@ wire  [bw_psum+3:0] sum_in;
 input fifo_ext_rd;
 input fifo_in_ready;
 output reg div_o;
+output reg fifo_ext_rd_reg;
 
 wire div_q;//latched div signal
 
@@ -37,35 +38,44 @@ wire  [bw_psum*col-1:0] fifo_out;
 wire  [bw_psum*col-1:0] array_out;
 wire  [bw_psum*col-1:0] ofifo_in;//
 wire  [col-1:0] fifo_wr;
-wire  ofifo_rd;
+reg  ofifo_rd;
 
 wire  [col-1:0] array_wr;//
 wire  [col-1:0] norm_wr;
 
-wire [3:0] qkmem_add;
-wire [3:0] pmem_add;
+reg [3:0] qkmem_add;
+reg [3:0] pmem_add;
 
-wire  qmem_rd;
-wire  qmem_wr; 
-wire  kmem_rd;
-wire  kmem_wr; 
-wire  pmem_rd;
-wire  pmem_wr; 
+reg  qmem_rd;
+reg  qmem_wr; 
+reg  kmem_rd;
+reg  kmem_wr; 
+reg  pmem_rd;
+reg  pmem_wr; 
 wire [bw_psum+3:0] sum_q;
 
+reg execute;
+reg load;
+reg [4:0] cnt;
+reg load_times;
+reg wr_times;
+reg [3:0] state;
 //assign fifo_ext_rd = inst[19];
 //assign div = inst[18];
 //assign acc = inst[17];
-assign ofifo_rd = inst[16];
-assign qkmem_add = inst[15:12];
-assign pmem_add = inst[11:8];
+//assign ofifo_rd = inst[16];
+//assign qkmem_add = inst[15:12];
+//assign pmem_add = inst[11:8];
 
-assign qmem_rd = inst[5];
-assign qmem_wr = inst[4];
-assign kmem_rd = inst[3];
-assign kmem_wr = inst[2];
-assign pmem_rd = inst[1];
-assign pmem_wr = inst[0];
+//assign qmem_rd = inst[5];
+//assign qmem_wr = inst[4];
+//assign kmem_rd = inst[3];
+//assign kmem_wr = inst[2];
+//assign pmem_rd = inst[1];
+//assign pmem_wr = inst[0];
+
+parameter READY=4'b0000, Q_WR=4'b0001, K_WR=4'b0010, LOADING=4'b0011, EXECUTE=4'b0100, WR_TO_MEM=4'b0101, FETCH=4'b0110, NORM=4'b0111, LOAD=4'b1000, FIFO_SUM=4'b1001, WAIT=4'b1010;
+parameter total_cycle= 16;
 
 assign mac_in  = inst[6] ? kmem_out : qmem_out;
 assign pmem_in =  fifo_out;
@@ -139,8 +149,7 @@ sfp_row #(.bw(bw), .bw_psum(bw_psum), .col(col)) sfp_row_instance (
 	.sum_out(sum_out_temp2),
 	.sfp_in(sfp_in),
 	.sfp_out(sfp_out),
-	.fifo_ext_rd(fifo_ext_rd),
-        .fifo_ext_rd_clk(fifo_ext_rd_clk),
+	.fifo_ext_rd(fifo_ext_rd_reg),
 	.reset(reset),
         .norm_wr(norm_wr),
         .div_q(div_q)
@@ -316,14 +325,15 @@ sfp_row #(.bw(bw), .bw_psum(bw_psum), .col(col)) sfp_row_instance (
             end
     FIFO_SUM:
 	    if (cnt == total_cycle) begin
-              fifo_ext_rd <= 0;
+              fifo_ext_rd_reg <= 0;
+              //fifo_ext_rd <= 0;
 	      cnt <= 0;
 	      state <= WAIT;
             end
 	    else begin
 	      cnt <= cnt + 1;
 	      if (cnt == 0) begin
-                fifo_ext_rd <= 1;
+                fifo_ext_rd_reg <= 1;
               end
 	    end
     WAIT:

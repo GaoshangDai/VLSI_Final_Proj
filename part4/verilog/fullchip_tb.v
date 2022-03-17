@@ -234,8 +234,8 @@ $display("##### Estimated Normalized Result #####");
          normalized_out_core2[t][q] = resultcore2[t][q];
   //       normalized_out_col_core1[t] = {normalized_out_col_core1[t][139:0], normalized_out_col_core1[t][q]}; 
   //       normalized_out_col_core2[t] = {normalized_out_col_core2[t][139:0], normalized_out_col_core2[t][q]}; 
-        normalized_out_col_core11= {normalized_out_col_core11[139:0], normalized_out_col_core1[t][q]}; 
-        normalized_out_col_core22 = {normalized_out_col_core22[139:0], normalized_out_col_core2[t][q]}; 
+        normalized_out_col_core11= {normalized_out_col_core11[139:0], normalized_out_core1[t][q]}; 
+        normalized_out_col_core22 = {normalized_out_col_core22[139:0], normalized_out_core2[t][q]}; 
       end
      $display("norm @cycle%2d: core1 -> %40h", t, normalized_out_col_core11);
      $display("norm @cycle%2d: core2 -> %40h", t, normalized_out_col_core22);
