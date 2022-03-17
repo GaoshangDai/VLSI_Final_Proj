@@ -54,3 +54,33 @@ core_col8_bw8_bw_psum20_pr16_1
 -----------------------------------------------------------------------------
 Total 2 references                                  469501.192978
 1
+ 
+****************************************
+Report : reference
+Design : fullchip
+Version: Q-2019.12-SP5-3
+Date   : Thu Mar 17 03:50:46 2022
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+core_col8_bw8_bw_psum20_pr16_0
+                              287232.116909
+                                                 1  287232.116909 h, n
+core_col8_bw8_bw_psum20_pr16_1
+                              287778.956929
+                                                 1  287778.956929 h, n
+-----------------------------------------------------------------------------
+Total 2 references                                  575011.073838
+1
